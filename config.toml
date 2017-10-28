@@ -2,14 +2,31 @@ baseURL = "https://docs.ginuerzh.xyz/"
 title = "Elementary Calculus"
 theme = "beautifulhugo"
 hasCJKLanguage = true
-# googleAnalytics = "UA-98791308-1"
+disqusShortname = "docs-ginuerzh-xyz"
+googleAnalytics = "UA-98791308-1"
 
 [params]
   subtitle = "An Infinitesimal Approach"
-  logo = "img/avatar-icon.png"
+  logo = "img/calculus/keisler/infinite.jpg"
   # favicon = "img/favicon.ico"
   # dateFormat = "January 2, 2006" # default date format
   #commit = false
   #rss = true
-  #comments = true
+  comments = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+
+[[menu.main]]
+  name = "categories"
+  url = "categories/"
+  weight = 1
+
+[[menu.main]]
+  name = "tags"
+  url = "tags/"
+  weight = 2
+
+[[menu.main]]
+  name = "about"
+  url = "about/"
+  weight = 3
