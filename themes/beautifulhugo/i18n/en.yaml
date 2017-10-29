@@ -8,15 +8,15 @@
 - id: translationsSeparator
   translation: ", "
 - id: readMore
-  translation: "Read More"
+  translation: "More"
 - id: olderPosts
-  translation: "Older Posts"
+  translation: "Older"
 - id: newerPosts
-  translation: "Newer Posts"
+  translation: "Newer"
 - id: previousPost
-  translation: "Previous Post"
+  translation: "Previous"
 - id: nextPost
-  translation: "Next Post"
+  translation: "Next"
 
 # 404 page
 - id: pageNotFound
