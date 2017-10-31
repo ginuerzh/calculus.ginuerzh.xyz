@@ -1,8 +1,8 @@
-baseURL = "https://docs.ginuerzh.xyz/"
+baseURL = "https://docs.ginuerzh.xyz/calculus/"
 title = "Elementary Calculus"
 theme = "beautifulhugo"
 hasCJKLanguage = true
-disqusShortname = "docs-ginuerzh-xyz"
+disqusShortname = "calculus-ginuerzh-xyz"
 googleAnalytics = "UA-98791308-1"
 
 [params]
