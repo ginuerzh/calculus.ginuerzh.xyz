@@ -3,7 +3,7 @@ title = "Elementary Calculus"
 theme = "beautifulhugo"
 hasCJKLanguage = true
 disqusShortname = "docs-ginuerzh-xyz"
-googleAnalytics = "UA-98791308-1"
+googleAnalytics = "UA-98791308-2"
 
 [params]
   subtitle = "An Infinitesimal Approach"
