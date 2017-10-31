@@ -1,4 +1,4 @@
-# lementary Calculus: An Infinitesimal Approach
+# Elementary Calculus: An Infinitesimal Approach
 
 [https://docs.ginuerzh.xyz/calculus/](https://docs.ginuerzh.xyz/calculus/)
 
