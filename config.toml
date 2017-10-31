@@ -7,7 +7,7 @@ googleAnalytics = "UA-98791308-1"
 
 [params]
   subtitle = "An Infinitesimal Approach"
-  logo = "img/keisler/infinite.jpg"
+  logo = "/calculus/img/keisler/infinite.jpg"
   # favicon = "img/favicon.ico"
   # dateFormat = "January 2, 2006" # default date format
   #commit = false
