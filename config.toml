@@ -15,7 +15,19 @@ googleAnalytics = "UA-98791308-2"
   comments = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
+
+[[menu.main]]
+    identifier = "contents"
+    name = "Contents"
+    weight = 1
+
+[[menu.main]]
+    parent = "contents"
+    name = "Keisler"
+    url = "keisler/"
+    weight = 1
+
 [[menu.main]]
   name = "about"
   url = "about/"
-  weight = 1
+  weight = 2
