@@ -16,7 +16,7 @@ url = "/keisler/"
 
 > #### [1.2 Functions of Real Numbers](/calculus/keisler/01/02/)
 
-> #### 1.3 Straight Lines
+> #### [1.3 Straight Lines](/calculus/keisler/01/03/)
 
 > #### [1.4 Slope and Velocity; the Hyperreal Line](/calculus/keisler/01/04/)
 
