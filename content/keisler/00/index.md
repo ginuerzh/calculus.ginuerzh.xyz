@@ -1,7 +1,6 @@
 +++
 date = "2017-10-10T14:13:50+08:00"
 title = "Introduction"
-url = "/keisler/intro/"
 +++
 
 # Introduction

@@ -1,13 +1,13 @@
 baseURL = "https://docs.ginuerzh.xyz/calculus/"
-title = "Elementary Calculus"
+title = "Calculus"
 theme = "beautifulhugo"
 hasCJKLanguage = true
 disqusShortname = "docs-ginuerzh-xyz"
 googleAnalytics = "UA-98791308-2"
 
 [params]
-  subtitle = "An Infinitesimal Approach"
-  logo = "/calculus/img/keisler/infinite.jpg"
+  # subtitle = ""
+  logo = "logo.jpg"
   # favicon = "img/favicon.ico"
   # dateFormat = "January 2, 2006" # default date format
   #commit = false
