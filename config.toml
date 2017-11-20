@@ -2,7 +2,7 @@ baseURL = "https://docs.ginuerzh.xyz/calculus/"
 title = "Calculus"
 theme = "beautifulhugo"
 hasCJKLanguage = true
-disqusShortname = "docs-ginuerzh-xyz"
+disqusShortname = "calculus-ginuerzh-xyz"
 googleAnalytics = "UA-98791308-2"
 
 [params]
