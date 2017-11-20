@@ -44,3 +44,7 @@ title = "Elementary Calculus"
 > #### [2.8 Implicit Functions](02/08/)
 
 > #### Extra Problems for Chapter 2
+
+### 3 Continuous Functions
+
+> #### [3.1 How to Set Up a Problem](03/01/)
