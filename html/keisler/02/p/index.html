@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Problems for Chapter 2</title>
+  <meta property="og:title" content="Problems for Chapter 2" />
+  <meta name="twitter:title" content="Problems for Chapter 2" />
+  <meta name="description" content="Problems for section 2.1 Find the derivative of the given function in Problems 1-21.
+ \(f(x) = x^2\)
+ \(f(t) = t^2 &#43; 3\)
+ \(f(x) = 1 - 2x^2\)
+ \(f(x) = 3x^2 &#43; 2\)
+ \(f(t) = 4t\)
+ \(f(x) = 2 - 5x\)
+ \(f(t) = 4t^3\)
+ \(f(t)=-t^3\)
+ \(f(u) = 5\sqrt{u}\)
+ \(f(u) = \sqrt{u &#43; 2}\)
+ \(g(x) = x\sqrt{x}\)
+ \(g(x) = 1 / \sqrt{x}\)">
+  <meta property="og:description" content="Problems for section 2.1 Find the derivative of the given function in Problems 1-21.
+ \(f(x) = x^2\)
+ \(f(t) = t^2 &#43; 3\)
+ \(f(x) = 1 - 2x^2\)
+ \(f(x) = 3x^2 &#43; 2\)
+ \(f(t) = 4t\)
+ \(f(x) = 2 - 5x\)
+ \(f(t) = 4t^3\)
+ \(f(t)=-t^3\)
+ \(f(u) = 5\sqrt{u}\)
+ \(f(u) = \sqrt{u &#43; 2}\)
+ \(g(x) = x\sqrt{x}\)
+ \(g(x) = 1 / \sqrt{x}\)">
+  <meta name="twitter:description" content="Problems for section 2.1 Find the derivative of the given function in Problems 1-21.
+ \(f(x) = x^2\)
+ \(f(t) = t^2 &#43; 3\)
+ \(f(x) = 1 - 2x^2\)
+ \(f(x) = 3x^2 &#43; 2\)
+ \(f(t) = 4t\)
+ \(f(x) = 2 - 5x\) …">
+  <meta name="author" content=""/>
+  <meta property="og:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://docs.ginuerzh.xyz/calculus/keisler/02/p/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Calculus" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://docs.ginuerzh.xyz/calculus/keisler/02/p/" />
+  <link rel="alternate" href="https://docs.ginuerzh.xyz/calculus/index.xml" type="application/rss+xml" title="Calculus">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/highlight.min.css" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-98791308-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Contents</a>
+              <div class="navlinks-children">
+                
+                  <a href="/calculus/keisler/">Keisler</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about" href="/calculus/about/">about</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Calculus" href="https://docs.ginuerzh.xyz/calculus/">
+            <img class="avatar-img" src="https://docs.ginuerzh.xyz/calculus/logo.jpg" alt="Calculus" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="keisler-heading">
+              <h1>Problems for Chapter 2</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="problems-for-section-2-1">Problems for section 2.1</h1>
+
+<p>Find the derivative of the given function in Problems 1-21.</p>
+
+<ol>
+<li><p>\(f(x) = x^2\)</p></li>
+
+<li><p>\(f(t) = t^2 + 3\)</p></li>
+
+<li><p>\(f(x) = 1 - 2x^2\)</p></li>
+
+<li><p>\(f(x) = 3x^2 + 2\)</p></li>
+
+<li><p>\(f(t) = 4t\)</p></li>
+
+<li><p>\(f(x) = 2 - 5x\)</p></li>
+
+<li><p>\(f(t) = 4t^3\)</p></li>
+
+<li><p>\(f(t)=-t^3\)</p></li>
+
+<li><p>\(f(u) = 5\sqrt{u}\)</p></li>
+
+<li><p>\(f(u) = \sqrt{u + 2}\)</p></li>
+
+<li><p>\(g(x) = x\sqrt{x}\)</p></li>
+
+<li><p>\(g(x) = 1 / \sqrt{x}\)</p></li>
+
+<li><p>\(g(t) = t^{-2}\)</p></li>
+
+<li><p>\(g(t) = t^{-3}\)</p></li>
+
+<li><p>\(f(y) = 3y^{-1} + 4y\)</p></li>
+
+<li><p>\(f(y) = 2y^3 + 4y^2\)</p></li>
+
+<li><p>\(f(x) = ax + b\)</p></li>
+
+<li><p>\(f(x) = ax^2\)</p></li>
+
+<li><p>\(f(x) = \sqrt{ax + b}\)</p></li>
+
+<li><p>\(f(x) = 1/(x + 2)\)</p></li>
+
+<li><p>\(f(x) = 1/(3 - 2x)\)</p></li>
+
+<li><p>Find the derivative of \(f(x) = 2x^2\) at the point \(x = 3\).</p></li>
+
+<li><p>Find the slope of the curve \(f(x) = \sqrt{x - 1}\) at the point \(x = 5\).</p></li>
+
+<li><p>An object moves according to the equation \(y = 1/(t + 2)\), \(t \ge 0\). Find the velocity as a function of \(t\).</p></li>
+
+<li><p>A particle moves according to the equation \(y = t^4\). Find the velocity as a function of \(t\).</p></li>
+
+<li><p>Suppose the population of a town grows according to the equation \(y = 100t + t^2\). Find the rate of growth at time \(t = 100\) years.</p></li>
+
+<li><p>Suppose a company makes a total profit of \(1000x - x^2\) dollars on \(x\) items. Find the marginal profit in dollars per item when \(x = 200\), \(x = 500\), and \(x = 1000\).</p></li>
+
+<li><p>Find the derivative of the function \(f(x) = |x + 1|\).</p></li>
+
+<li><p>Find the derivative of the function \(f(x) = |x^3|\).</p></li>
+
+<li><p>Find the slope of the parabola \(y = ax^2 + bx + c\) where \(a\), \(b\), \(c\) are constants.</p></li>
+</ol>
+
+<h1 id="problems-for-section-2-2">Problems for section 2.2</h1>
+
+<p>In Problems 1-8, express \(\Delta{y}\) and \(dy\) as functions of \(x\) and \(\Delta{x}\), and for \(\Delta{x}\) infinitesimal find an infinitesimal \(\varepsilon\) such that \(\Delta{y} = dy + \varepsilon\ \Delta{x}\).</p>
+
+<ol>
+<li><p>\(y = x^2\)</p></li>
+
+<li><p>\(y = -5x^2\)</p></li>
+
+<li><p>\(y = 2\sqrt{x}\)</p></li>
+
+<li><p>\(y = x^4\)</p></li>
+
+<li><p>\(y = 1 / x\)</p></li>
+
+<li><p>\(y = x^{-2}\)</p></li>
+
+<li><p>\(y = x - 1/x\)</p></li>
+
+<li><p>\(y = 4x + x^3\)</p></li>
+
+<li><p>If \(y = 2x^2\) and \(z = x^3\), find \(\Delta{y}\), \(\Delta{z}\), \(dy\), and \(dz\).</p></li>
+
+<li><p>If \(y = 1 / (x + 1)\) and \(z = 1 / (x + 2)\), find \(\Delta{y}\), \(\Delta{z}\), \(dy\), and \(dz\).</p></li>
+
+<li><p>Find \(d(2x + 1)\)</p></li>
+
+<li><p>Find \(d(x^2 - 3x)\)</p></li>
+
+<li><p>Find \(d(\sqrt{x + 1})\)</p></li>
+
+<li><p>Find \(d(\sqrt{2x + 1})\)</p></li>
+
+<li><p>Find \(d(ax + b)\)</p></li>
+
+<li><p>Find \(d(ax^2)\)</p></li>
+
+<li><p>Find \(d(3 + 2/x)\)</p></li>
+
+<li><p>Find \(d(x\sqrt{x})\)</p></li>
+
+<li><p>Find \(d(1/sqrt{x})\)</p></li>
+
+<li><p>Find \(d(x^3 - x^2)\)</p></li>
+
+<li><p>Let \(y = \sqrt{x}\), \(z = 3x\). Find \(d(y + z)\) and \(d(y/z)\).</p></li>
+
+<li><p>Let \(y = x^{-1}\) and \(z = x^3\). Find \(d(y + z)\) and \(d(yz)\).</p>
+
+<p>In Problems 23-30 below, find the equation of the line tangent to the given curve at the given point.</p></li>
+
+<li><p>\(y = x^2\); (2, 4)</p></li>
+
+<li><p>\(y = 2x^2\); (-1, 2)</p></li>
+
+<li><p>\(y = -x^2\); (0, 0)</p></li>
+
+<li><p>\(y = \sqrt{x}\); (1, 1)</p></li>
+
+<li><p>\(y = 3x - 4\); (1, -1)</p></li>
+
+<li><p>\(y = \sqrt{t - 1}\); (5, 2)</p></li>
+
+<li><p>\(y = x^4\); (-2, 16)</p></li>
+
+<li><p>\(y = x^3 - x\); (0, 0)</p></li>
+
+<li><p>Find the equation of the line tangent to the parabola \(y = x^2\) at the point \((x_0, x_0^2)\).</p></li>
+
+<li><p>Find all points \(P(x_0, x_0^2)\) on the parabola \(y = x^2\) such that the tangent line at \(P\) passes through the point \((0, -4)\).</p></li>
+
+<li><p>Prove that the line tangent to the parabola \(y = x^2\) at \(P(x_0, x_0^2)\) does not meet the parabola at any point except \(P\).</p></li>
+</ol>
+
+<h1 id="problems-for-section-2-3">Problems for section 2.3</h1>
+
+<p>In Problems 1-42 below, find the derivative.</p>
+
+<ol>
+<li><p>\(f(x) = 3x^2 + 5x - 4\)</p></li>
+
+<li><p>\(s = \frac{1}{3}t^3 + \frac{1}{2}t^2 + t\)</p></li>
+
+<li><p>\(y = (x + 8)^5\)</p></li>
+
+<li><p>\(z = (2 + 3x)^4\)</p></li>
+
+<li><p>\(f(t) = (4 - t)^3\)</p></li>
+
+<li><p>\(g(x) = 3(2 - 5x)^6\)</p></li>
+
+<li><p>\(y = (x^2 + 5)^3\)</p></li>
+
+<li><p>\(u = (6 + 2x^2)^3\)</p></li>
+
+<li><p>\(u = (6 - 2x^2)^3\)</p></li>
+
+<li><p>\(w = (1 + 4x^3)^{-2}\)</p></li>
+
+<li><p>\(w = (1 - 4x^3)^{-2}\)</p></li>
+
+<li><p>\(y = 1 + x^{-1} + x^{-2} + x^{-3}\)</p></li>
+
+<li><p>\(f(x) = 5(x + 1 - 1/x)\)</p></li>
+
+<li><p>\(u = (x^2 + 3x +1)^4\)</p></li>
+
+<li><p>\(v = 4(2x^2 - x + 3)^{-2}\)</p></li>
+
+<li><p>\(y = -(2x + 3 + 4x^{-1})^{-1}\)</p></li>
+
+<li><p>\(y = \frac{1}{1 + 1/t}\)</p></li>
+
+<li><p>\(y = \frac{1}{2x^2 + 1}\)</p></li>
+
+<li><p>\(s = \frac{-3}{4t^2 - 2t + 1}\)</p></li>
+
+<li><p>\(s = (2t + 1)(3t - 2)\)</p></li>
+
+<li><p>\(h(x) = \frac{1}{2}(x^2 + 1)(5 - 2x)\)</p></li>
+
+<li><p>\(y = (2x^3 + 4)(x^2 - 3x + 1)\)</p></li>
+
+<li><p>\(v = (3t^2 + 1)(2t - 4)^3\)</p></li>
+
+<li><p>\(z = (-2x + 4 + 3x^{-1})(x  + 1 - 5x^{-1})\)</p></li>
+
+<li><p>\(y = \frac{x+1}{x-1}\)</p></li>
+
+<li><p>\(w = \frac{2 - 3x}{1 + 2x}\)</p></li>
+
+<li><p>\(y = \frac{x^2 - 1}{x^2  +1}\)</p></li>
+
+<li><p>\(u = \frac{x}{x^2 + 1}\)</p></li>
+
+<li><p>\(x = \frac{(s - 1)(s - 2)}{s - 3}\)</p></li>
+
+<li><p>\(y = \frac{t}{1 + 1/t}\)</p></li>
+
+<li><p>\(y = \frac{2x^{-1} - x^{-2}}{3x^{-1} - 4x^{-2}}\)</p></li>
+
+<li><p>\(y = 4x - 5\)</p></li>
+
+<li><p>\(y = 6\)</p></li>
+
+<li><p>\(y = 2x(3x - 1)(4 - 2x)\)</p></li>
+
+<li><p>\(y = 3(x^2 + 1)(2x^2 - 1)(2x + 3)\)</p></li>
+
+<li><p>\(y = (4x + 3)^{-1} + (x - 4)^{-2}\)</p></li>
+
+<li><p>\(z = \frac{1}{(2x + 1)(x - 3)}\)</p></li>
+
+<li><p>\(y = (x^2 + 1)^{-1}(3x - 1)^{-2}\)</p></li>
+
+<li><p>\(y = [(2x + 1)^{-1} + 3]^{-1}\)</p></li>
+
+<li><p>\(s = [(t^2 + 1)^3 + t]^{-1}\)</p></li>
+
+<li><p>\(y = (2x + 1)^3(x^2 + 1)^2\)</p></li>
+
+<li><p>\(y = \Bigl(\frac{2}{x - 1} - x^{-3}\Bigr)^4\)</p>
+
+<p>In Problems 43-48, assume \(u\) and \(v\) depend on \(x\) and find \(dy/dx\) in terms of \(du/dx\) and \(dv/dx\).</p></li>
+
+<li><p>\(y = u - v\)</p></li>
+
+<li><p>\(y = u^2v\)</p></li>
+
+<li><p>\(y = 4u + v^2\)</p></li>
+
+<li><p>\(y = 1/(u + v)\)</p></li>
+
+<li><p>\(y = 1/uv\)</p></li>
+
+<li><p>\(y = (u + v)(2u - v)\)</p></li>
+
+<li><p>Find the line tangent to the curve \(y = 1 + x + x^2 + x^3\) at the point \((1, 4)\).</p></li>
+
+<li><p>Find the line tangent to the curve \(y = 9x^{-2}) at the point \((3, 1)\).</p></li>
+
+<li><p>Consider the parabola \(y = x^2 + bx + c\). Find values of \(b\) and \(c\) such that the line \(y = 2x\) is tangent to the parabola at the point \(x = 2\), \(y = 4\).</p></li>
+
+<li><p>Show that if \(u\), \(v\) and \(w\) are differentiable functions of \(x\) and \(y = uvw\), then</p>
+
+<p>$$
+\frac{dy}{dx} = uv\frac{dw}{dx} + uw\frac{dv}{dx} + vw\frac{du}{dx}.
+$$</p></li>
+
+<li><p>Use the principle of induction to show that if \(n\) is a positive integer, \(u_1,\cdots, u_n\) are differentiable functions of \(x\), and \(y = u_1 + \cdots + u_n\), then</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{du_1}{dx} + \cdots + \frac{du_n}{dx}.
+$$</p></li>
+
+<li><p>Use the principle of induction to prove that for every positive integer \(n\),</p>
+
+<p>$$
+1 + 2 + \cdots + n = \frac{n(n + 1)}{2}.
+$$</p></li>
+
+<li><p>Every rational function can be written as a quotient of two polynomials, \(p(x)/q(x)\). Using this fact, show that the derivative of every rational function is a rational function.</p></li>
+</ol>
+
+<h1 id="problems-for-section-2-4">Problems for section 2.4</h1>
+
+<p>In Problems 1-16, find \(dy/dx\).</p>
+
+<ol>
+<li><p>\(x = 3y^3 + 2y\)</p></li>
+
+<li><p>\(x = y^2 + 1\), \(y &gt; 0\)</p></li>
+
+<li><p>\(x = 1 - 2y^2\), \(y &gt; 0\)</p></li>
+
+<li><p>\(x = 2y^5 + y^3 + 4\)</p></li>
+
+<li><p>\(x = (y^2 + 2)^{-1}\), \(y &gt; 0\)</p></li>
+
+<li><p>\(y = 1/\sqrt{x}\)</p></li>
+
+<li><p>\(y = x^{4 / 3}\)</p></li>
+
+<li><p>\(y = \sqrt{2x}\)</p></li>
+
+<li><p>\(y = (\sqrt{x} + 1)/(\sqrt{x} - 1)\)</p></li>
+
+<li><p>\(y = (2x^{1 / 3} + 1)^3\)</p></li>
+
+<li><p>\(y = 1 + 2x^{1 / 3} + 4x^{2 / 3} + 6x\)</p></li>
+
+<li><p>\(y = x^{-1 / 4} + 3x^{-3 / 4}\)</p></li>
+
+<li><p>\(y = (x^{5 / 3} - x)^{-2}\)</p></li>
+
+<li><p>\(x = y + 2\sqrt{y}\)</p></li>
+
+<li><p>\(x = 3y^{1 / 3} + 2y\), \(y &gt; 0\)</p></li>
+
+<li><p>\(x = 1/(1 + \sqrt{y})\)</p>
+
+<p>In Problems 17-25, find the inverse function \(y\) and its derivative \(dy/dx\) as functions of \(x\).</p></li>
+
+<li><p>\(x = ky + c\), \(k \ne 0\)</p></li>
+
+<li><p>\(x = y^3 + 1\)</p></li>
+
+<li><p>\(x = 2y^2 + 1\), \(y \ge 0\)</p></li>
+
+<li><p>\(x = 2y^2 + 1\), \(y \le 0\)</p></li>
+
+<li><p>\(x = y^4 - 3\), \(y \ge 0\)</p></li>
+
+<li><p>\(x = y^2 + 3y - 1\), \(y \ge -\frac{3}{2}\)</p></li>
+
+<li><p>\(x = y^4 + y^2 + 1\), \(y \ge 0\)</p></li>
+
+<li><p>\(x = 1/y^2 + 1/y - 1\), \(y &gt; 0\)</p></li>
+
+<li><p>\(x = \sqrt{y} + 2y\), \(y &gt; 0\)</p></li>
+
+<li><p>Show that no second degree polynomial \(x = ay^2 + by + c\) has an inverse function.</p></li>
+
+<li><p>Show that \(x = ay^2 + by + c\), \(y \ge -b/2a\), has an inverse function. What does its graph look like?</p></li>
+
+<li><p>Prove that a function \(y = f(x)\) has an inverse function if and only if whenever \(x_1 \ne x_2\), \(f(x_1) \ne f(x_2)\).</p></li>
+</ol>
+
+<h1 id="problems-for-section-2-5">Problems for section 2.5</h1>
+
+<p>In Problems 1-20, find the derivative.</p>
+
+<ol>
+<li><p>\(y = \cos^2\theta\)</p></li>
+
+<li><p>\(s = \tan^2 t\)</p></li>
+
+<li><p>\(y = 2\sin x + 3\cos x\)</p></li>
+
+<li><p>\(y = \sin x \cdot \cos x\)</p></li>
+
+<li><p>\(w = \frac{1}{\cos z}\)</p></li>
+
+<li><p>\(w = \frac{1}{\sin z}\)</p></li>
+
+<li><p>\(y = \sin^n \theta\)</p></li>
+
+<li><p>\(y = \tan^n \theta\)</p></li>
+
+<li><p>\(s = t \sin t\)</p></li>
+
+<li><p>\(s = \frac{\cos t}{t - 1}\)</p></li>
+
+<li><p>\(y = xe^x\)</p></li>
+
+<li><p>\(y = 1/(1 + e^x)\)</p></li>
+
+<li><p>\(y = (\ln x)^2\)</p></li>
+
+<li><p>\(y = x \ln x\)</p></li>
+
+<li><p>\(y = e^x \cdot \ln x\)</p></li>
+
+<li><p>\(y = e^x \cdot \sin x\)</p></li>
+
+<li><p>\(u = \sqrt{v}(1 - e^v)\)</p></li>
+
+<li><p>\(u = (1 + e^v)(1 - e^v)\)</p></li>
+
+<li><p>\(y = x^n \ln x\)</p></li>
+
+<li><p>\(y = (\ln x)^n\)</p>
+
+<p>In Problems 21-24, find the equation of the tangent line at the given point.</p></li>
+
+<li><p>\(y = \sin x\) at \((\pi/6, \frac{1}{2})\)</p></li>
+
+<li><p>\(y = \cos x\) at \((\pi/4, \sqrt{2}/2)\)</p></li>
+
+<li><p>\(y = x - \ln x\) at \((e, e - 1)\)</p></li>
+
+<li><p>\(y = e^{-x}\) at \((0, 1)\)</p></li>
+</ol>
+
+<h1 id="problems-for-section-2-6">Problems for section 2.6</h1>
+
+<p>In Problems 1-44, find \(dy/dx\).</p>
+
+<ol>
+<li><p>\(y = \sqrt{x + 2}\)</p></li>
+
+<li><p>\(y = \sqrt{7 + 4x}\)</p></li>
+
+<li><p>\(y = \sqrt{5 - x}\)</p></li>
+
+<li><p>\(y = \sqrt{1 - 10x}\)</p></li>
+
+<li><p>\(y = \frac{1}{\sqrt{2 + 3x}}\)</p></li>
+
+<li><p>\(y = \frac{1}{\sqrt{4 - x}}\)</p></li>
+
+<li><p>\(y = \sqrt[3]{6x + 1}\)</p></li>
+
+<li><p>\(y = \sqrt[5]{2 - 3x}\)</p></li>
+
+<li><p>\(y = \sqrt{x^2 + 1}\)</p></li>
+
+<li><p>\(y = \sqrt{1 - x^2}\)</p></li>
+
+<li><p>\(y = \sin(3x)\)</p></li>
+
+<li><p>\(y = \cos(4 - 2x)\)</p></li>
+
+<li><p>\(y = \sin(x^{-2})\)</p></li>
+
+<li><p>\(y = \cos\sqrt{x}\)</p></li>
+
+<li><p>\(y = e^{4x}\)</p></li>
+
+<li><p>\(y = e^{-x^2}\)</p></li>
+
+<li><p>\(y = e^{\cos x}\)</p></li>
+
+<li><p>\(y = \ln(\ln x)\)</p></li>
+
+<li><p>\(y = \cos u\), \(u = e^x\)</p></li>
+
+<li><p>\(y = \tan u\), \(u = \ln x\)</p></li>
+
+<li><p>\(y = u^{10}\), \(u = 1 - 4x\)</p></li>
+
+<li><p>\(y = u^{-10}\), \(u = 1 - x^2\)</p></li>
+
+<li><p>\(y = \sin u + \sin v\), \(u = 1 - x^2\), \(v = 2x - 1\)</p></li>
+
+<li><p>\(y = e^u + e^v\), \(u = 1 - 3x\), \(v = 3 - 4x\)</p></li>
+
+<li><p>\(y = e^u\), \(u = \sqrt{v}\), \(v = \sin x\)</p></li>
+
+<li><p>\(y = \ln u\), \(u = \tan v\), \(v = 1/x\)</p></li>
+
+<li><p>\(y = u^{-1 / 3}\), \(u = 1 + \sqrt{v}\), \(v = x^2 - 1\)</p></li>
+
+<li><p>\(y = u^{-1}\), \(u = 3v + 4\), \(v = 1/(x + 1)\)</p></li>
+
+<li><p>\(y = u^4\), \(u = 1 + 1/v\), \(v = x^3 + 1\)</p></li>
+
+<li><p>\(y = u^2 + 1\), \(u = v^2 + 1\), \(v = x^2 + 1\)</p></li>
+
+<li><p>\(y = (\sqrt{x^2 - 1} + \sqrt{x^2 + 1})^{1 / 3}\)</p></li>
+
+<li><p>\(y = (x + \sqrt{3 - 4x})^{-1 / 2}\)</p></li>
+
+<li><p>\(y = 3x \sin(2x - 1)\)</p></li>
+
+<li><p>\(y = \sin(2x)\cos(3x)\)</p></li>
+
+<li><p>\(x = \cos(3t)\), \(y = \sin(3t)\)</p></li>
+
+<li><p>\(x = e^t\), \(y = \ln t\)</p></li>
+
+<li><p>\(x = \sin t\), \(y = \sin(2t)\)</p></li>
+
+<li><p>\(x = \sin(e^t)\), \(y = \cos(e^t)\)</p></li>
+
+<li><p>\(x = \ln (t + 1)\), \(y = t^2\)</p></li>
+
+<li><p>\(x = e^{\cos t}\), \(y = e^{\sin t}\)</p></li>
+
+<li><p>\(x = \sqrt{t^2 - 4}\), \(y = \sqrt{t^2 + 4}\)</p></li>
+
+<li><p>\(x = 1 + \sqrt[3]{t}\), \(y = 2 + \sqrt[3]{t}\)</p></li>
+
+<li><p>\(x = \sqrt[3]{t + 1}\), \(y = \sqrt[3]{t + 2}\)</p></li>
+
+<li><p>\(x = \frac{2t + 1}{t + 2}\), \(y = \frac{2t + 3}{t + 2}\)</p></li>
+
+<li><p>A particle moves in the plane according to the parametric equations \(x = t^2 + 1\), \(y = 3t^3\). Find the slope of its path.</p></li>
+
+<li><p>An ant moves in the plane according to the equations \(x = (l-t^2)^{-1}\), \(y = \sqrt{t}\). Find the slope of its path.</p></li>
+
+<li><p>Let \(y\) depend on \(u\), \(u\) depend on \(v\), and \(v\) depend on \(x\). Assume the derivatives \(dy/du\), \(du/dv\), and \(dv/dx\) exist. Prove that</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dv}\frac{dv}{dx}.
+$$</p></li>
+
+<li><p>Let the function \(f(x)\) be differentiable for all \(x\), and let \(g(x) = f(f(x))\). Show that \(g^\prime(x) = f^\prime(f(x))f^\prime(x)\).</p></li>
+</ol>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/03/01/" data-toggle="tooltip" data-placement="top" title="3.1 How to Set Up a Problem">&larr; Previous</a>
+          </li>
+        
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "calculus-ginuerzh-xyz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/main.js"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

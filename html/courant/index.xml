@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courants on Calculus</title>
+    <link>https://docs.ginuerzh.xyz/calculus/courant/</link>
+    <description>Recent content in Courants on Calculus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 24 Jun 2018 20:51:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://docs.ginuerzh.xyz/calculus/courant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Decimal Fractions. Bases Other than Ten</title>
+      <link>https://docs.ginuerzh.xyz/calculus/courant/decimal/</link>
+      <pubDate>Sun, 24 Jun 2018 20:51:00 +0800</pubDate>
+      
+      <guid>https://docs.ginuerzh.xyz/calculus/courant/decimal/</guid>
+      <description>It is possible that there are two different decimal representations of the same number; for example,
+$$ 1 = 0.99999\cdots = 1.00000\cdots. $$
+In our construction the integer \(c_0\) is determined uniquely by \(x\) unless \(x\) itself is an integer. In that case we could choose either \(c_0 = x\) or \(c_0 = x - 1\). Once a choice has been made the digit \(c_1\) is unique unless \(x\) is one of the new points subdividing \(I_0\) into ten equal parts.</description>
+    </item>
+    
+  </channel>
+</rss>

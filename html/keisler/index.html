@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Elementary Calculus</title>
+  <meta property="og:title" content="Elementary Calculus" />
+  <meta name="twitter:title" content="Elementary Calculus" />
+  <meta name="description" content="Elementary Calculus: An Infinitesimal Approach H. Jerome Keisler Introduction 1 Real and Hyperreal Numbers  1.1 The Real Line 1.2 Functions of Real Numbers 1.3 Straight Lines 1.4 Slope and Velocity; the Hyperreal Line 1.5 Infinitesimal, Finite and Infinite Numbers 1.6 Standard Parts Extra Problems for Chapter 1  2 Differentiation  2.1 Derivatives 2.2 Differentials and Tangent Lines 2.3 Derivatives of Rational Functions 2.4 Inverse Functions 2.5 Transcendental Functions 2.">
+  <meta property="og:description" content="Elementary Calculus: An Infinitesimal Approach H. Jerome Keisler Introduction 1 Real and Hyperreal Numbers  1.1 The Real Line 1.2 Functions of Real Numbers 1.3 Straight Lines 1.4 Slope and Velocity; the Hyperreal Line 1.5 Infinitesimal, Finite and Infinite Numbers 1.6 Standard Parts Extra Problems for Chapter 1  2 Differentiation  2.1 Derivatives 2.2 Differentials and Tangent Lines 2.3 Derivatives of Rational Functions 2.4 Inverse Functions 2.5 Transcendental Functions 2.">
+  <meta name="twitter:description" content="Elementary Calculus: An Infinitesimal Approach H. Jerome Keisler Introduction 1 Real and Hyperreal Numbers  1.1 The Real Line 1.2 Functions of Real Numbers 1.3 Straight Lines 1.4 Slope and Velocity; …">
+  <meta name="author" content=""/>
+  <meta property="og:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://docs.ginuerzh.xyz/calculus/keisler/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Calculus" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://docs.ginuerzh.xyz/calculus/keisler/" />
+  <link rel="alternate" href="https://docs.ginuerzh.xyz/calculus/index.xml" type="application/rss+xml" title="Calculus">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/highlight.min.css" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-98791308-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Contents</a>
+              <div class="navlinks-children">
+                
+                  <a href="/calculus/keisler/">Keisler</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about" href="/calculus/about/">about</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Calculus" href="https://docs.ginuerzh.xyz/calculus/">
+            <img class="avatar-img" src="https://docs.ginuerzh.xyz/calculus/logo.jpg" alt="Calculus" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Elementary Calculus</h1>
+              <hr class="small">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+          <div class="well">
+            
+
+<h1 id="elementary-calculus-an-infinitesimal-approach">Elementary Calculus: An Infinitesimal Approach</h1>
+
+<h2 id="h-jerome-keisler-https-www-math-wisc-edu-keisler"><a href="https://www.math.wisc.edu/~keisler/">H. Jerome Keisler</a></h2>
+
+<h3 id="introduction-00"><a href="00/">Introduction</a></h3>
+
+<h3 id="1-real-and-hyperreal-numbers-01"><a href="01/">1 Real and Hyperreal Numbers</a></h3>
+
+<blockquote>
+<h4 id="1-1-the-real-line-01-01"><a href="01/01/">1.1 The Real Line</a></h4>
+
+<h4 id="1-2-functions-of-real-numbers-01-02"><a href="01/02/">1.2 Functions of Real Numbers</a></h4>
+
+<h4 id="1-3-straight-lines-01-03"><a href="01/03/">1.3 Straight Lines</a></h4>
+
+<h4 id="1-4-slope-and-velocity-the-hyperreal-line-01-04"><a href="01/04/">1.4 Slope and Velocity; the Hyperreal Line</a></h4>
+
+<h4 id="1-5-infinitesimal-finite-and-infinite-numbers-01-05"><a href="01/05/">1.5 Infinitesimal, Finite and Infinite Numbers</a></h4>
+
+<h4 id="1-6-standard-parts-01-06"><a href="01/06/">1.6 Standard Parts</a></h4>
+
+<h4 id="extra-problems-for-chapter-1">Extra Problems for Chapter 1</h4>
+</blockquote>
+
+<h3 id="2-differentiation">2 Differentiation</h3>
+
+<blockquote>
+<h4 id="2-1-derivatives-02-01"><a href="02/01/">2.1 Derivatives</a></h4>
+
+<h4 id="2-2-differentials-and-tangent-lines-02-02"><a href="02/02/">2.2 Differentials and Tangent Lines</a></h4>
+
+<h4 id="2-3-derivatives-of-rational-functions-02-03"><a href="02/03/">2.3 Derivatives of Rational Functions</a></h4>
+
+<h4 id="2-4-inverse-functions-02-04"><a href="02/04/">2.4 Inverse Functions</a></h4>
+
+<h4 id="2-5-transcendental-functions-02-05"><a href="02/05/">2.5 Transcendental Functions</a></h4>
+
+<h4 id="2-6-chain-rule-02-06"><a href="02/06/">2.6 Chain Rule</a></h4>
+
+<h4 id="2-7-higher-derivatives-02-07"><a href="02/07/">2.7 Higher Derivatives</a></h4>
+
+<h4 id="2-8-implicit-functions-02-08"><a href="02/08/">2.8 Implicit Functions</a></h4>
+
+<h4 id="extra-problems-for-chapter-2">Extra Problems for Chapter 2</h4>
+</blockquote>
+
+<h3 id="3-continuous-functions">3 Continuous Functions</h3>
+
+<blockquote>
+<h4 id="3-1-how-to-set-up-a-problem-03-01"><a href="03/01/">3.1 How to Set Up a Problem</a></h4>
+</blockquote>
+
+          </div>
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/p/">
+                <h2 class="post-title">Problems for Chapter 2</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on December 5, 2017
+              </p>
+              <div class="post-entry">
+                
+                  Problems for section 2.1 Find the derivative of the given function in Problems 1-21.
+ \(f(x) = x^2\)
+ \(f(t) = t^2 + 3\)
+ \(f(x) = 1 - 2x^2\)
+ \(f(x) = 3x^2 + 2\)
+ \(f(t) = 4t\)
+ \(f(x) = 2 - 5x\)
+ \(f(t) = 4t^3\)
+ \(f(t)=-t^3\)
+ \(f(u) = 5\sqrt{u}\)
+ \(f(u) = \sqrt{u + 2}\)
+ \(g(x) = x\sqrt{x}\)
+ \(g(x) = 1 / \sqrt{x}\)
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/p/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/03/01/">
+                <h2 class="post-title">3.1 How to Set Up a Problem</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 20, 2017
+              </p>
+              <div class="post-entry">
+                
+                  3.1 How to Set Up a Problem In applications, a calculus problem is often presented verbally, and it is up to you to set up the problem in mathematical terms. The problem can usually be described mathematically by a list of equations and inequalities. The next two sections contain several examples that illustrate the process of setting up a problem. The examples in this section are from algebra and geometry, and those in the next section are from calculus.
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/03/01/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/08/">
+                <h2 class="post-title">2.8 Implicit Functions</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 7, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.8 Implicit Functions We now turn to the topic of implicit differentiation. We say that \(y\) is an implicit function of \(x\) if we are given an equation
+$$ \sigma(x, y) = \tau(x, y) $$
+which determines \(y\) as a function of \(x\). An example is \(x + xy = 2y\). Implicit differentiation is a way of finding the derivative of \(y\) without actually solving for \(y\) as a function of \(x\).
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/08/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/07/">
+                <h2 class="post-title">2.7 Higher Derivatives</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 6, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.7 Higher Derivatives DEFINITION The second derivative of a real function \(f\) is the derivative of the derivative of \(f\), and is denoted by \(f^{\prime\prime}\). The third derivative off is the derivative of the second derivative, and is denoted by \(f^{\prime\prime\prime}\), or \(f^{(3)}\). In general, the nth derivative of \(f\) is denoted by \(f^{(n)}\).
+If \(y\) depends on \(x\), \(y = f(x)\), then the second differential of \(y\) is defined to be
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/07/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/06/">
+                <h2 class="post-title">2.6 Chain Rule</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 6, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.6 Chain Rule The Chain Rule is more general than the Inverse Function Rule and deals with the case where \(x\) and \(y\) are both functions of a third variable \(t\).
+Suppose
+$$ x = f(t), y = G(x). $$
+Thus \(x\) depends on \(t\), and \(y\) depends on \(x\). But \(y\) is also a function of \(t\),
+$$ y = g(t), $$
+where \(g\) is defined by the rule
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/06/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/05/">
+                <h2 class="post-title">2.5 Transcendental Functions</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on October 31, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.5 Transcendental Functions The transcendental functions include the trigonometric functions \(\sin x,\ \cos x,\ \tan x\), the exponential function \(e^x\), and the natural logarithm function \(\ln x\). These functions are developed in detail in Chapters 7 and 8. This section contains a brief discussion.
+1 Trigonometric Functions The Greek letters \(\theta\) (theta) and \(\phi\) (phi) are often used for angles. In the calculus it is convenient to measure angles in radians instead of degrees.
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/05/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/04/">
+                <h2 class="post-title">2.4 Inverse Functions</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on October 30, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.4 Inverse Functions Two real functions \(f\) and \(g\) are called inverse functions if the two equations
+$$ y = f(x), \ x = g(y) $$
+have the same graphs in the \((x, y)\) plane. That is, a point \((x, y)\) is on the curve \(y = f(x)\) if, and only if, it is on the curve \(x = g(y)\). (In general, the graph of the equation \(x = g(y)\) is different from the graph of \(y = g(x)\), but is the same as the graph of \(y = f(x)\); see Figure 2.
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/04/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/03/">
+                <h2 class="post-title">2.3 Derivatives of Rational Functions</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on October 28, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.3 Derivatives of Rational Functions A term of the form
+$$ a_1x + a_0 $$
+where \(a_1, a_0\) are real numbers, is called a linear term in \(x\); if \(a_1 \ne 0\), it is also called polynomial of degree one in \(x\). A term of the form
+$$ a_2x^2 + a_1x + a_0, \ a_2 \ne 0 $$
+is called a polynomial of degree two in \(x\), and, in general, a term of the form
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/03/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/02/">
+                <h2 class="post-title">2.2 Differentials and Tangent Lines</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on October 28, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.2 Differentials and Tangent Lines Suppose we are given a curve \(y = f(x)\) and at a point \((a, b)\) on the curve the slope \(f^\prime(a)\) is defined. Then the tangent line to the curve at the point \((a, b)\), illustrated in Figure 2.2.1, is defined to be the straight line which passes through the point \((a, b)\) and has the same slope as the curve at \(x = a\).
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/02/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/01/">
+                <h2 class="post-title">2.1 Derivatives</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on October 27, 2017
+              </p>
+              <div class="post-entry">
+                
+                  2.1 Derivatives We are now ready to explain what is meant by the slope of a curve or the velocity of a moving point. Consider a real function \(f\) and a real number \(a\) in the domain of \(f\). When \(x\) has value \(a\), \(f(x)\) has value \(f(a)\). Now suppose the value of \(x\) is changed from \(a\) to a hyperreal number \(a + \Delta{x}\) which is infinitely close to but not equal to \(a\).
+                  <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/01/" class="post-read-more">[More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+            
+              <li class="next">
+                <a href="/calculus/keisler/page/2">Older &rarr;</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/main.js"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

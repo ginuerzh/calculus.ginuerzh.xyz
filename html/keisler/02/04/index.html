@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>2.4 Inverse Functions</title>
+  <meta property="og:title" content="2.4 Inverse Functions" />
+  <meta name="twitter:title" content="2.4 Inverse Functions" />
+  <meta name="description" content="2.4 Inverse Functions Two real functions \(f\) and \(g\) are called inverse functions if the two equations
+$$ y = f(x), \ x = g(y) $$
+have the same graphs in the \((x, y)\) plane. That is, a point \((x, y)\) is on the curve \(y = f(x)\) if, and only if, it is on the curve \(x = g(y)\). (In general, the graph of the equation \(x = g(y)\) is different from the graph of \(y = g(x)\), but is the same as the graph of \(y = f(x)\); see Figure 2.">
+  <meta property="og:description" content="2.4 Inverse Functions Two real functions \(f\) and \(g\) are called inverse functions if the two equations
+$$ y = f(x), \ x = g(y) $$
+have the same graphs in the \((x, y)\) plane. That is, a point \((x, y)\) is on the curve \(y = f(x)\) if, and only if, it is on the curve \(x = g(y)\). (In general, the graph of the equation \(x = g(y)\) is different from the graph of \(y = g(x)\), but is the same as the graph of \(y = f(x)\); see Figure 2.">
+  <meta name="twitter:description" content="2.4 Inverse Functions Two real functions \(f\) and \(g\) are called inverse functions if the two equations
+$$ y = f(x), \ x = g(y) $$
+have the same graphs in the \((x, y)\) plane. That is, a point …">
+  <meta name="author" content=""/>
+  <meta property="og:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://docs.ginuerzh.xyz/calculus/keisler/02/04/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Calculus" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://docs.ginuerzh.xyz/calculus/keisler/02/04/" />
+  <link rel="alternate" href="https://docs.ginuerzh.xyz/calculus/index.xml" type="application/rss+xml" title="Calculus">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/highlight.min.css" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-98791308-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Contents</a>
+              <div class="navlinks-children">
+                
+                  <a href="/calculus/keisler/">Keisler</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about" href="/calculus/about/">about</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Calculus" href="https://docs.ginuerzh.xyz/calculus/">
+            <img class="avatar-img" src="https://docs.ginuerzh.xyz/calculus/logo.jpg" alt="Calculus" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="keisler-heading">
+              <h1>2.4 Inverse Functions</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="2-4-inverse-functions">2.4 Inverse Functions</h1>
+
+<p>Two real functions \(f\) and \(g\) are called <em>inverse functions</em> if the two equations</p>
+
+<p>$$
+y = f(x), \ x = g(y)
+$$</p>
+
+<p>have the same graphs in the \((x, y)\) plane. That is, a point \((x, y)\) is on the curve \(y = f(x)\) if, and only if, it is on the curve \(x = g(y)\). (In general, the graph of the equation \(x = g(y)\) is different from the graph of \(y = g(x)\), but is the same as the graph of \(y = f(x)\); see Figure 2.4.1.)</p>
+
+<p><img src="/calculus/img/keisler/f2.4.1.gif" alt="figure 2.4.1" /></p>
+
+<p><strong>Figure 2.4.1</strong> Inverse Functions</p>
+
+<p>For example, the function \(y = x^2, x \geq 0\), has the inverse function \(x = \sqrt{y}\); the function \(y = x^3\) has the inverse function \(x= \sqrt[3]y\)</p>
+
+<p>If we think of \(f\) as a black box operating on an input \(x\) to produce an output \(f(x)\), the inverse function \(g\) is a black box operating on the output \(f(x)\) to undo the work of \(f\) and produce the original input \(x\) (see Figure 2.4.2).</p>
+
+<p><img src="/calculus/img/keisler/f2.4.2.gif" alt="figure 2.4.2" /></p>
+
+<p><strong>Figure 2.4.2</strong></p>
+
+<p>Many functions, such as \(y = x^2\), do not have inverse functions: In Figure 2.4.3, we see that \(x\) is not a function of \(y\) because at \(y = 1\), \(x\) has the two values \(x = 1\) and \(x = -1\).</p>
+
+<p><img src="/calculus/img/keisler/f2.4.3.gif" alt="figure 2.4.3" /></p>
+
+<p><strong>Figure 2.4.3</strong></p>
+
+<p>Often one can tell whether a function \(f\) has an inverse by looking at its graph. If there is a horizontal line \(y = c\) which cuts the graph at more than one point, the function \(f\) has no inverse. (See Figure 2.4.3.) If no horizontal line cuts the graph at more than one point, then \(f\) has an inverse function \(g\). Using this rule, we can see in Figure 2.4.4 that the functions \(y = |x|\) and \(y =\sqrt{1 - x^2}\) do not have inverses.</p>
+
+<p><img src="/calculus/img/keisler/f2.4.4.gif" alt="figure 2.4.4" /></p>
+
+<p><strong>Figure 2.4.4</strong> No inverse functions</p>
+
+<p>Table 2.4.1 shows some familiar functions which do have inverses. Note that in each case, \(\frac{dx}{dy} = \frac{1}{dy/dx}\).</p>
+
+<p><strong>Table 2.4.1</strong></p>
+
+<p><img src="/calculus/img/keisler/t2.4.1.jpg" alt="Table 2.4.4" /></p>
+
+<p>Suppose the \((x, y)\) plane is flipped over about the diagonal line \(y = x\). This will make the \(x\)- and \(y\)-axes change places, forming the \((y, x)\) plane. If \(f\) has an inverse function \(g\), the graph of the function \(y = f(x)\) will become the graph of the inverse function \(x = g(y)\) in the \((y, x)\) plane, as shown in Figure 2.4.5.</p>
+
+<p><img src="/calculus/img/keisler/f2.4.5.gif" alt="figure 2.4.5" /></p>
+
+<p><strong>Figure 2.4.5</strong></p>
+
+<p>The following rule shows that the derivatives of inverse functions are always reciprocals of each other.</p>
+
+<h2 id="inverse-function-rule">INVERSE FUNCTION RULE</h2>
+
+<p><em>Suppose \(f\) and \(g\) are inverse functions, so that the two equations</em></p>
+
+<p>\(y=f(x)\) <em>and</em> \(x = g(y)\)</p>
+
+<p><em>have the same graphs. If both derivatives \(f^\prime(x)\) and \(g^\prime(y)\) exist and are nonzero, then</em></p>
+
+<p>$$
+f^\prime(x) = \frac{1}{g^\prime(y)};
+$$</p>
+
+<p>that is,</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{dx/dy}.
+$$</p>
+
+<h3 id="proof">PROOF</h3>
+
+<p>Let \(\Delta{x}\) be a nonzero infinitesimal and let \(\Delta{y}\) be the corresponding change in \(y\). Then \(\Delta{y}\) is also infinitesimal because \(f^\prime(x)\) exists and is nonzero because \(f(x)\) has an inverse function. By the rules for standard parts,</p>
+
+<p>$$
+f^\prime(x) \cdot g^\prime(y) = st\Bigl(\frac{\Delta{y}}{\Delta{x}}\Bigr) \cdot st\Bigl(\frac{\Delta{x}}{\Delta{y}}\Bigr)
+$$</p>
+
+<p>$$
+= st\Bigl(\frac{\Delta{y}}{\Delta{x}} \cdot \frac{\Delta{x}}{\Delta{y}}\Bigr) = st(1) = 1.
+$$</p>
+
+<p>Therefore</p>
+
+<p>$$
+f^\prime(x) = \frac{1}{g^\prime(y)}.
+$$</p>
+
+<p>The formula</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{dx/dy}
+$$</p>
+
+<p>in the Inverse Function Rule is not as trivial as it looks. A more complete statement is</p>
+
+<p>\(\frac{dy}{dx}\) computed with \(x\) the independent variable</p>
+
+<p>= \(\frac{1}{dx/dy}\) computed with \(y\) the independent variable.</p>
+
+<p>Sometimes it is easier to compute \(dx/dy\) than \(dy/dx\), and in such cases the Inverse Function Rule is a useful method.</p>
+
+<h3 id="example-1">EXAMPLE 1</h3>
+
+<p>Find \(dy/dx\) where \(x = 1 + y^{-3}\).</p>
+
+<p>Before solving the problem we note that</p>
+
+<p>$$
+y = \frac{1}{\sqrt[3]{x - 1}},
+$$</p>
+
+<p>so \(x\) and \(y\) are inverse functions of each other. We want to find</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{d(1/\sqrt[3]{x - 1})}{dx}
+$$</p>
+
+<p>with \(x\) the independent variable. This looks hard, but it is easy to compute</p>
+
+<p>$$
+\frac{dx}{dy} = \frac{d(1 + y^{-3})}{dy}
+$$</p>
+
+<p>with \(y\) the independent variable.</p>
+
+<p><em>SOLUTION</em></p>
+
+<p>$$
+\frac{dx}{dy} = -3y^{-4},
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{-3y^{-4}} = -\frac{1}{3}y^4.
+$$</p>
+
+<p>We can write \(dy/dx\) in terms of \(x\) by substituting,</p>
+
+<p>$$
+\frac{dy}{dx} = -\frac{1}{3}(x - 1) ^ {-4 / 3}.
+$$</p>
+
+<h3 id="example-2">EXAMPLE 2</h3>
+
+<p>Find \(dy/dx\) where \(x = y^5 + y^3 + y\). Compute \(dy/dx\) at the point \((1, 3)\). Although we cannot solve the equation explicitly for \(y\) as a function of \(x\), we can see from the graph in Figure 2.4.6 that there is an inverse function \(y = f(x)\).</p>
+
+<p><img src="/calculus/img/keisler/f2.4.6.gif" alt="figure 2.4.6" /></p>
+
+<p><strong>Figure 2.4.6</strong></p>
+
+<p>By the Inverse Function Rule,</p>
+
+<p>$$
+\frac{dx}{dy} = 5y^4 + 3y^2 + 1,
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{5y^4 + 3y^2 + 1}.
+$$</p>
+
+<p>This time we must leave the answer in terms of \(y\). At the point \((3, 1)\), we substitute 1 for \(y\) and get \(dy/dx = 1 / 9\).</p>
+
+<p>For \(y \geq 0\), the function \(x = y^n\) has the inverse function \(y = x^{1 / n}\). In the next theorem, we use the Inverse Function Rule to find a new derivative, that of \(y = x^{1 / n}\).</p>
+
+<h2 id="theorem-1">THEOREM 1</h2>
+
+<p><em>If \(n\) is a positive integer and</em></p>
+
+<p>$$
+y = x^{1 / n},
+$$</p>
+
+<p><em>then</em></p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{n}x^{(1 / n) - 1}.
+$$</p>
+
+<p>Remember that \(y = x^{1 / n}\) is defined for all \(x\) if \(n\) is odd and for \(x &gt; 0\) if \(n\) is even. The derivative \(\frac{1}{n}x^{(1 / n) - 1}\) is defined for \(x \ne 0\) if \(n\) is odd and for \(x &gt; 0\) if \(n\) is even.</p>
+
+<p>If we are willing to assume that \(dy/dx\) exists, then we can quickly find \(dy/dx\) by the Inverse Function Rule.</p>
+
+<p>$$
+x = y^n,
+$$</p>
+
+<p>$$
+\frac{dx}{dy} = ny^{n-1},
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{dx/dy} = \frac{1}{ny^{n-1}} = \frac{1}{n}y^{1-n}
+$$</p>
+
+<p>$$
+= \frac{1}{n}(x^{1 / n})^{1-n} = \frac{1}{n}x^{(1-n) / n} = \frac{1}{n}x^{(1 / n) - 1}.
+$$</p>
+
+<p>Here is a longer but complete proof which shows that \(dy/dx\) exists and computes its value.</p>
+
+<h3 id="proof-of-theorem-1">PROOF OF THEOREM 1</h3>
+
+<p>Let \(x \ne 0\) and let \(\Delta{x}\) be nonzero infinitesimal. We first show that</p>
+
+<p>$$
+\Delta{y} = (x + \Delta{x})^{1 / n} - x^{1 / n}
+$$</p>
+
+<p>is a nonzero infinitesimal. \(\Delta{y} \ne 0\) because \(x + \Delta{x} \ne x\). The standard part of \(\Delta{y}\) is</p>
+
+<p>$$
+st(\Delta{y}) = st((x + \Delta{x})^{1 / n}) - st(x^{1 / n})
+$$</p>
+
+<p>$$
+= x^{1 / n} - x^{1 / n} = 0.
+$$</p>
+
+<p>Therefore \(\Delta{y}\) is nonzero infinitesimal.</p>
+
+<p>Now</p>
+
+<p>$$
+x = y^n,
+$$</p>
+
+<p>$$
+\frac{dx}{dy} = ny^{n-1},
+$$</p>
+
+<p>$$
+\frac{\Delta{x}}{\Delta{y}} \approx ny^{n-1}.
+$$</p>
+
+<p>Therefore</p>
+
+<p>$$
+\frac{\Delta{y}}{\Delta{x}} \approx \frac{1}{ny^{n-1}} = \frac{1}{n}x^{(1 / n) - 1},
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{n}x^{(1 / n) - 1}.
+$$</p>
+
+<p><img src="/calculus/img/keisler/f2.4.7.gif" alt="figure 2.4.7" /></p>
+
+<p><strong>Figure 2.4.7</strong></p>
+
+<p>Figure 2.4.7 shows the graphs of \(y = x^{1 / 3}\) and \(y = x^{1 / 4}\). At \(x = 0\), the curves are vertical and have no slope.</p>
+
+<h3 id="example-3">EXAMPLE 3</h3>
+
+<p>Find the derivatives of \(y = x^{1 / n}\) for \(n = 2, 3, 4\).</p>
+
+<p>$$
+\frac{d(x^{1 / 2})}{dx} = \frac{1}{2}x^{-1 / 2}, \ x &gt; 0.
+$$</p>
+
+<p>$$
+\frac{d(x^{1 / 3})}{dx} = \frac{1}{3}x^{-2 / 3}, \ x \ne 0.
+$$</p>
+
+<p>$$
+\frac{d(x^{1 / 4})}{dx} = \frac{1}{4}x^{-3 / 4}, \ x &gt; 0.
+$$</p>
+
+<p>Using Theorem 1 we can show that the Power Rule holds when the exponent is any rational number.</p>
+
+<h2 id="power-rule-for-rational-exponents">POWER RULE FOR RATIONAL EXPONENTS</h2>
+
+<p><em>Let \(y = x^r\) where \(r\) is a rational number. Then whenever \(x &gt; 0\),</em></p>
+
+<p>$$
+\frac{dy}{dx} = rx^{r-1}.
+$$</p>
+
+<h3 id="proof-1">PROOF</h3>
+
+<p>Let \(r = m/n\) where \(m\) and \(n\) are integers, \(n &gt; 0\). Let</p>
+
+<p>$$
+u = x^{1 / n}, \ \ y = u^m.
+$$</p>
+
+<p>Then</p>
+
+<p>$$
+\frac{du}{dx} = \frac{1}{n}x^{(1 / n) - 1}
+$$</p>
+
+<p>and</p>
+
+<p>$$
+\frac{dy}{dx} = mu^{m - 1}\frac{du}{dx}
+$$</p>
+
+<p>$$
+= m(x^{1 / n})^{m - 1}\Bigl(\frac{1}{n}x^{(1 / n) - 1}\Bigr)
+$$</p>
+
+<p>$$
+= \frac{m}{n}x^{(m / n) - 1} = rx^{r - 1}.
+$$</p>
+
+<h3 id="example-4">EXAMPLE 4</h3>
+
+<p>Find \(dy/dx\) where</p>
+
+<p>$$
+y = x^{-3 / 7}.
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = -\frac{3}{7}x^{(-3 / 7) - 1} = -\frac{3}{7}x^{-10 / 7}.
+$$</p>
+
+<h3 id="example-5">EXAMPLE 5</h3>
+
+<p>Find \(dy/dx\) where</p>
+
+<p>$$
+y = \frac{1}{2 + x^{3 / 2}}.
+$$</p>
+
+<p>Let</p>
+
+<p>$$
+u = 2 + x^{3 / 2}, \ \ y = u^{-1}.
+$$</p>
+
+<p>Then</p>
+
+<p>$$
+\frac{du}{dx} = \frac{3}{2}x^{1 / 2},
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = -u^{-2}\frac{du}{dx}
+$$</p>
+
+<p>$$
+= -u^{-2}\Bigl(\frac{3}{2}x^{1 / 2}\Bigr) = -\frac{3}{2}\frac{x^{1 / 2}}{(2 + x^{3 / 2})^2}.
+$$</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/03/" data-toggle="tooltip" data-placement="top" title="2.3 Derivatives of Rational Functions">&larr; Previous</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/05/" data-toggle="tooltip" data-placement="top" title="2.5 Transcendental Functions">Next &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "calculus-ginuerzh-xyz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/main.js"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>2.7 Higher Derivatives</title>
+  <meta property="og:title" content="2.7 Higher Derivatives" />
+  <meta name="twitter:title" content="2.7 Higher Derivatives" />
+  <meta name="description" content="2.7 Higher Derivatives DEFINITION The second derivative of a real function \(f\) is the derivative of the derivative of \(f\), and is denoted by \(f^{\prime\prime}\). The third derivative off is the derivative of the second derivative, and is denoted by \(f^{\prime\prime\prime}\), or \(f^{(3)}\). In general, the nth derivative of \(f\) is denoted by \(f^{(n)}\).
+If \(y\) depends on \(x\), \(y = f(x)\), then the second differential of \(y\) is defined to be">
+  <meta property="og:description" content="2.7 Higher Derivatives DEFINITION The second derivative of a real function \(f\) is the derivative of the derivative of \(f\), and is denoted by \(f^{\prime\prime}\). The third derivative off is the derivative of the second derivative, and is denoted by \(f^{\prime\prime\prime}\), or \(f^{(3)}\). In general, the nth derivative of \(f\) is denoted by \(f^{(n)}\).
+If \(y\) depends on \(x\), \(y = f(x)\), then the second differential of \(y\) is defined to be">
+  <meta name="twitter:description" content="2.7 Higher Derivatives DEFINITION The second derivative of a real function \(f\) is the derivative of the derivative of \(f\), and is denoted by \(f^{\prime\prime}\). The third derivative off is the …">
+  <meta name="author" content=""/>
+  <meta property="og:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://docs.ginuerzh.xyz/calculus/keisler/02/07/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Calculus" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://docs.ginuerzh.xyz/calculus/keisler/02/07/" />
+  <link rel="alternate" href="https://docs.ginuerzh.xyz/calculus/index.xml" type="application/rss+xml" title="Calculus">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/highlight.min.css" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-98791308-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Contents</a>
+              <div class="navlinks-children">
+                
+                  <a href="/calculus/keisler/">Keisler</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about" href="/calculus/about/">about</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Calculus" href="https://docs.ginuerzh.xyz/calculus/">
+            <img class="avatar-img" src="https://docs.ginuerzh.xyz/calculus/logo.jpg" alt="Calculus" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="keisler-heading">
+              <h1>2.7 Higher Derivatives</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="2-7-higher-derivatives">2.7 Higher Derivatives</h1>
+
+<h2 id="definition">DEFINITION</h2>
+
+<p><em>The second derivative of a real function \(f\) is the derivative of the derivative of \(f\), and is denoted by \(f^{\prime\prime}\). The third derivative off is the derivative of the second derivative, and is denoted by \(f^{\prime\prime\prime}\), or \(f^{(3)}\). In general, the nth derivative of \(f\) is denoted by \(f^{(n)}\).</em></p>
+
+<p><em>If \(y\) depends on \(x\), \(y = f(x)\), then the <strong>second differential</strong> of \(y\) is defined to be</em></p>
+
+<p>$$
+d^2y = f^{\prime\prime}(x)\ dx^2.
+$$</p>
+
+<p><em>In general the nth differential of \(y\) is defined by</em></p>
+
+<p>$$
+d^ny = f^{(n)}(x)\ dx^n.
+$$</p>
+
+<p><em>Here \(dx^2\) means \((dx)^2\) and \(dx^n\) means \((dx)^n\).</em></p>
+
+<p>We thus have the alternative notations</p>
+
+<p>$$
+\frac{d^2y}{dx^2} = f^{\prime\prime}(x),\ \ \frac{d^ny}{dx^n} = f^{(n)}(x)
+$$</p>
+
+<p>for the second and \(n\)th derivatives. The notation</p>
+
+<p>$$
+y^{\prime\prime} = f^{\prime\prime}(x),\ \ y^{(n)} = f^{(n)}(x)
+$$</p>
+
+<p>is also used.</p>
+
+<p>The definition of the second differential can be remembered in the following way. By definition,</p>
+
+<p>$$
+dy=f^\prime(x)\ dx.
+$$</p>
+
+<p>Now hold \(dx\) constant and formally apply the Constant Rule for differentiation, obtaining</p>
+
+<p>$$
+d(dy)=f^{\prime\prime}(x)\ dx\ dx,
+$$</p>
+
+<p>or</p>
+
+<p>$$
+d^2y = f^{\prime\prime}(x)\ dx^2.
+$$</p>
+
+<p>(This is not a correct use of the Constant Rule because the rule applies to a real constant \(c\), and \(dx\) is not a real number. It is only a mnemonic device to remember the definition of \(d^2y\), not a proof.)</p>
+
+<p>The third and higher differentials can be motivated in the same way. If we hold \(dx\) constant and formally use the Constant Rule again and again, we obtain</p>
+
+<p>$$
+dy = f^\prime(x)\ dx,
+$$</p>
+
+<p>$$
+d^2y = f^{\prime\prime}(x)\ dx\ dx = f^{\prime\prime}(x)\ dx^2,
+$$</p>
+
+<p>$$
+d^3y = f^{\prime\prime\prime}(x)\ dx^2\ dx = f^{\prime\prime\prime}\ dx^3,
+$$</p>
+
+<p>$$
+d^4y = f^{(4)}(x)\ dx^3\ dx =f^{(4)}(x)\ dx^4,
+$$</p>
+
+<p>and so on.</p>
+
+<p>The <em>acceleration</em> of a moving particle is defined to be the derivative of the velocity with respect to time,</p>
+
+<p>$$
+a = dv/dt.
+$$</p>
+
+<p>Thus the velocity is the first derivative of the distance and the acceleration is the second derivative of the distance. If s is distance, we have</p>
+
+<p>$$
+v = \frac{ds}{dt}, \ \ a = \frac{d^2s}{dt^2}.
+$$</p>
+
+<h3 id="example-1">EXAMPLE 1</h3>
+
+<p>A ball thrown up with initial velocity \(b\) moves according to the equation</p>
+
+<p>$$
+y = bt- 16t^2
+$$</p>
+
+<p>with \(y\) in feet, \(t\) in seconds. Then the velocity is</p>
+
+<p>$$
+v = b - 32t\ ft/sec,
+$$</p>
+
+<p>and the acceleration (due to gravity) is a constant,</p>
+
+<p>$$
+a = -32\ ft/sec^2.
+$$</p>
+
+<h3 id="example-2">EXAMPLE 2</h3>
+
+<p>Find the second derivative of \(y = \sin (2\theta)\).</p>
+
+<p><em>First derivative</em></p>
+
+<p>Put \(u = 2\theta\). Then</p>
+
+<p>$$
+y = \sin u,\ \ \frac{dy}{du} = \cos u, \ \ \frac{du}{d\theta} = 2.
+$$</p>
+
+<p>By the Chain Rule,</p>
+
+<p>$$
+\frac{dy}{d\theta} = \frac{dy}{du} \cdot \frac{du}{d\theta} = \cos (2\theta) \cdot 2,
+$$</p>
+
+<p>$$
+\frac{dy}{d\theta} = 2\cos (2\theta).
+$$</p>
+
+<p><em>Second derivative</em></p>
+
+<p>Let \(v = 2\cos(2\theta)\). We must find \(dv/d\theta\). Put \(u = 2\theta\). Then</p>
+
+<p>$$
+v = 2\cos u, \ \ \frac{dv}{du} = -2\sin u, \ \ \frac{du}{d\theta} = 2.
+$$</p>
+
+<p>Using the Chain Rule again.</p>
+
+<p>$$
+\frac{d^2y}{d\theta^2} = \frac{dv}{d\theta} = \frac{dv}{du} \cdot \frac{du}{d\theta} = (-2\sin(2\theta)) \cdot 2.
+$$</p>
+
+<p>This simplifies to</p>
+
+<p>$$
+\frac{d^2y}{d\theta^2} = -4\sin(2\theta).
+$$</p>
+
+<h3 id="example-3">EXAMPLE 3</h3>
+
+<p>A particle moves so that at time \(t\) it has gone a distance \(s\) along a straight line, its velocity is \(v\), and its acceleration is \(a\). Show that</p>
+
+<p>$$
+a = v\frac{dv}{ds}.
+$$</p>
+
+<p>By definition we have</p>
+
+<p>$$
+v = \frac{ds}{dt},\ \ a = \frac{dv}{dt},
+$$</p>
+
+<p>so by the Chain Rule,</p>
+
+<p>$$
+a = \frac{dv}{ds}\frac{ds}{dt} = v\frac{dv}{ds}.
+$$</p>
+
+<h3 id="example-4">EXAMPLE 4</h3>
+
+<p>If a polynomial of degree \(n\) is repeatedly differentiated, the \(k\)th derivative will be a polynomial of degree \(n - k\) for \(k \le n\), and the \((n + 1)\)st derivative will be zero. For example,</p>
+
+<p>$$
+y = 3x^5 - 10x^4 + x^2 - 7x + 4.
+$$</p>
+
+<p>$$
+dy/dx = 15x^4 - 40x^3 + 2x - 7.
+$$</p>
+
+<p>$$
+d^2y/dx^2 = 60x^3 - 120x^2 + 2.
+$$</p>
+
+<p>$$
+d^3y/dx^3 = 180x^2 - 240x.
+$$</p>
+
+<p>$$
+d^4y/dx^4 = 360x - 240.
+$$</p>
+
+<p>$$
+d^5y/dx^5 = 360.
+$$</p>
+
+<p>$$
+d^6y/dx^6 = 0.
+$$</p>
+
+<p>Geometrically, the second derivative \(f^{\prime\prime}(x)\) is the slope of the curve \(y^\prime = f^\prime(x)\) and is also the rate of change of the slope of the curve \(y = f(x)\).</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/06/" data-toggle="tooltip" data-placement="top" title="2.6 Chain Rule">&larr; Previous</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/08/" data-toggle="tooltip" data-placement="top" title="2.8 Implicit Functions">Next &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "calculus-ginuerzh-xyz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/main.js"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

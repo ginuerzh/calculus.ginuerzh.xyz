@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>2.2 Differentials and Tangent Lines</title>
+  <meta property="og:title" content="2.2 Differentials and Tangent Lines" />
+  <meta name="twitter:title" content="2.2 Differentials and Tangent Lines" />
+  <meta name="description" content="2.2 Differentials and Tangent Lines Suppose we are given a curve \(y = f(x)\) and at a point \((a, b)\) on the curve the slope \(f^\prime(a)\) is defined. Then the tangent line to the curve at the point \((a, b)\), illustrated in Figure 2.2.1, is defined to be the straight line which passes through the point \((a, b)\) and has the same slope as the curve at \(x = a\).">
+  <meta property="og:description" content="2.2 Differentials and Tangent Lines Suppose we are given a curve \(y = f(x)\) and at a point \((a, b)\) on the curve the slope \(f^\prime(a)\) is defined. Then the tangent line to the curve at the point \((a, b)\), illustrated in Figure 2.2.1, is defined to be the straight line which passes through the point \((a, b)\) and has the same slope as the curve at \(x = a\).">
+  <meta name="twitter:description" content="2.2 Differentials and Tangent Lines Suppose we are given a curve \(y = f(x)\) and at a point \((a, b)\) on the curve the slope \(f^\prime(a)\) is defined. Then the tangent line to the curve at the …">
+  <meta name="author" content=""/>
+  <meta property="og:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://docs.ginuerzh.xyz/calculus/keisler/02/02/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Calculus" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://docs.ginuerzh.xyz/calculus/keisler/02/02/" />
+  <link rel="alternate" href="https://docs.ginuerzh.xyz/calculus/index.xml" type="application/rss+xml" title="Calculus">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/highlight.min.css" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-98791308-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Contents</a>
+              <div class="navlinks-children">
+                
+                  <a href="/calculus/keisler/">Keisler</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about" href="/calculus/about/">about</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Calculus" href="https://docs.ginuerzh.xyz/calculus/">
+            <img class="avatar-img" src="https://docs.ginuerzh.xyz/calculus/logo.jpg" alt="Calculus" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="keisler-heading">
+              <h1>2.2 Differentials and Tangent Lines</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="2-2-differentials-and-tangent-lines">2.2 Differentials and Tangent Lines</h1>
+
+<p>Suppose we are given a curve \(y = f(x)\) and at a point \((a, b)\) on the curve the slope \(f^\prime(a)\) is defined. Then the <em>tangent line</em> to the curve at the point \((a, b)\), illustrated in Figure 2.2.1, is defined to be the straight line which passes through the point \((a, b)\) and has the same slope as the curve at \(x = a\). Thus the tangent line is given by the equation</p>
+
+<p>$$
+l(x) - b = f^\prime(a)(x - a),
+$$</p>
+
+<p>or</p>
+
+<p>$$
+l(x) = f^\prime(a)(x - a) + b.
+$$</p>
+
+<p><img src="/calculus/img/keisler/f2.2.1.gif" alt="figure 2.2.1" /></p>
+
+<p><strong>Figure 2.2.1</strong> Tangent lines.</p>
+
+<h3 id="example-1">EXAMPLE 1</h3>
+
+<p>For the curve \(y = x^3\), find the tangent lines at the points \((0, 0)\), \((1, 1)\), and \((-\frac{1}{2}, -\frac{1}{8})\) (Figure 2.2.2).</p>
+
+<p>The slope is given by \(f^\prime(x) = 3x^2\). At \(x = 0, f^\prime(0) = 3 \cdot 0^2 = 0\). The tangent line has the equation</p>
+
+<p>$$
+y = 0(x - 0) + 0,
+$$</p>
+
+<p>or</p>
+
+<p>$$
+y = 0.
+$$</p>
+
+<p><img src="/calculus/img/keisler/f2.2.2.gif" alt="figure 2.2.2" /></p>
+
+<p><strong>Figure 2.2.2</strong></p>
+
+<p>At \(x = 1, f^\prime(1) = 3\), whence the tangent line is</p>
+
+<p>$$
+y = 3(x - 1) + 1,
+$$</p>
+
+<p>or</p>
+
+<p>$$
+y = 3x - 2.
+$$</p>
+
+<p>At \(x = -\frac{1}{2}, f^\prime(-\frac{1}{2}) = 3 \cdot (-\frac{1}{2})^2 = \frac{3}{4}\), so the tangent line is</p>
+
+<p>$$
+y = \frac{3}{4}(x - (-\frac{1}{2})) + (-\frac{1}{8}),
+$$</p>
+
+<p>or</p>
+
+<p>$$
+y = \frac{3}{4}x + \frac{1}{4}.
+$$</p>
+
+<p>Given a curve \(y = f(x)\), suppose that \(x\) starts out with the value \(a\) and then changes by an infinitesimal amount \(\Delta{x}\). What happens to \(y\)? Along the curve, \(y\) will change by the amount</p>
+
+<p>$$
+f(a + \Delta{x}) - f(a) = \Delta{y}.
+$$</p>
+
+<p>But along the tangent line \(y\) will change by the amount</p>
+
+<p>$$
+l(a + \Delta{x}) - l(a)
+$$</p>
+
+<p>$$
+= [f^\prime(a)(a + \Delta{x} - a) + b] - [f^\prime(a)(a - a) + b]
+$$</p>
+
+<p>$$
+= f^\prime(a)\ \Delta{x}.
+$$</p>
+
+<p>When \(x\) changes from \(a\) to \(a + \Delta{x}\), we see that:</p>
+
+<p>change in \(y\) along curve = \(f(a + \Delta{x}) - f(a)\),</p>
+
+<p>change in \(y\) along tangent line = \(f^\prime(a)\ \Delta{x}\).</p>
+
+<p>In the last section we introduced the dependent variable \(\Delta{y}\), the increment of \(y\), with the equation</p>
+
+<p>$$
+\Delta{y} = f(x + \Delta{x}) - f(x).
+$$</p>
+
+<p>\(\Delta{y}\) is equal to the change in \(y\) along the curve as \(x\) changes to \(x + \Delta{x}\).</p>
+
+<p>The following theorem gives a simple but useful formula for the increment \(\Delta{y}\).</p>
+
+<h2 id="increment-theorem">INCREMENT THEOREM</h2>
+
+<p><em>Let \(y = f(x)\). Suppose \(f^\prime(x)\) exists at a certain point \(x\), and \(\Delta{x}\) is infinitesimal. Then \(\Delta{y}\) is infinitesimal, and</em>
+$$
+\Delta{y} = f^\prime(x) \Delta{x} + \varepsilon\ \Delta{x}
+$$</p>
+
+<p><em>for some infinitesimal \(\varepsilon\), which depends on \(x\) and \(\Delta{x}\).</em></p>
+
+<h3 id="proof">PROOF</h3>
+
+<p><em>Case 1</em></p>
+
+<p>\(\Delta{x} = 0\). In this case, \(\Delta{y} = f^\prime(x)\ \Delta{x} = 0\), and we put \(\varepsilon = 0\).</p>
+
+<p><em>Case 2</em></p>
+
+<p>\(\Delta{x} \ne 0\). Then</p>
+
+<p>$$
+\frac{\Delta{y}}{\Delta{x}} \approx f^\prime(x);
+$$</p>
+
+<p>so for some infinitesimal \(\varepsilon\),</p>
+
+<p>$$
+\frac{\Delta{y}}{\Delta{x}} = f^\prime(x) + \varepsilon.
+$$</p>
+
+<p>Multiplying both sides by \(\Delta{x}\),</p>
+
+<p>$$
+\Delta{y} = f^\prime(x)\ \Delta{x} + \varepsilon\ \Delta{x}.
+$$</p>
+
+<h3 id="example-2">EXAMPLE 2</h3>
+
+<p>Let \(y = x^3\), so that \(y^\prime = 3x^2\). According to the Increment Theorem,</p>
+
+<p>$$
+\Delta{y} = 3x^2\ \Delta{x} + \varepsilon\ \Delta{x}
+$$</p>
+
+<p>for some infinitesimal \(\varepsilon\). Find \(\varepsilon\) in terms of \(x\) and \(\Delta{x}\) when \(\Delta{x} \ne 0\). We have</p>
+
+<p>$$
+\Delta{y} = 3x^2 \Delta{x} + \varepsilon\ \Delta{x},
+$$</p>
+
+<p>$$
+\frac{\Delta{y}}{\Delta{x}} = 3x^2 + \varepsilon,
+$$</p>
+
+<p>$$
+\varepsilon = \frac{\Delta{y}}{\Delta{x}} - 3x^2.
+$$</p>
+
+<p>We must still eliminate \(\Delta{y}\). From Example 1 in Section 2.1,</p>
+
+<p>$$
+\Delta{y} = (x + \Delta{x})^3 - x^3,
+$$</p>
+
+<p>$$
+\frac{\Delta{y}}{\Delta{x}} = 3x^2 + 3x\ \Delta{x} + (\Delta{x})^2.
+$$</p>
+
+<p>Substituting,</p>
+
+<p>$$
+\varepsilon = (3x^2 + 3x\ \Delta{x} + (\Delta{x})^2) - 3x^2.
+$$</p>
+
+<p>Since \(3x^2\) cancels,</p>
+
+<p>$$
+\varepsilon = 3x\ \Delta{x} + (\Delta{x})^2.
+$$</p>
+
+<p>We shall now introduce a new dependent variable \(dy\), called the differential of \(y\), with the equation</p>
+
+<p>$$
+dy = f^\prime(x)\ \Delta{x}.
+$$</p>
+
+<p>\(dy\) is equal to the change in \(y\) along the tangent line as \(x\) changes to \(x + \Delta{x}\). In Figure 2.2.3 we see \(dy\) and \(\Delta{y}\) under the microscope.</p>
+
+<p><img src="/calculus/img/keisler/f2.2.3.gif" alt="figure 2.2.3" /></p>
+
+<p><strong>Figure 2.2.3</strong> \(\Delta{y}\) = change in \(y\) along curve, \(dy\) = change in \(y\) along tangent line</p>
+
+<p>To keep our notation uniform we also introduce the symbol \(dx\) as another name for \(\Delta{x}\). For an independent variable \(x\), \(\Delta{x}\) and \(dx\) are the same, but for a dependent variable \(y\), \(\Delta{y}\) and \(dy\) are different.</p>
+
+<h2 id="definition">DEFINITION</h2>
+
+<p><em>Suppose \(y\) depends on \(x\), \(y = f(x)\).</em></p>
+
+<p>(i) <em>The <strong>differential of</strong> \(x\) is the independent variable \(dx = \Delta{x}\).</em></p>
+
+<p>(ii) <em>The <strong>differential of</strong> \(y\) is the dependent variable \(dy\) given by \(dy = f^\prime(x)\ dx\).</em></p>
+
+<p>When \(dx \ne 0\), the equation above may be rewritten as</p>
+
+<p>$$
+\frac{dy}{dx} = f^\prime(x).
+$$</p>
+
+<p>Compare this equation with</p>
+
+<p>$$
+\frac{\Delta{y}}{\Delta{x}} \approx f^\prime(x).
+$$</p>
+
+<p>The quotient \(dy/dx\) is a very convenient alternative symbol for the derivative \(f^\prime(x)\). In fact we shall write the derivative in the form \(dy/dx\) most of the time.</p>
+
+<p>The differential \(dy\) depends on two independent variables \(x\) and \(dx\). In functional notation,</p>
+
+<p>$$
+dy = df(x, dx)
+$$</p>
+
+<p>where \(df\) is the real function of two variables defined by</p>
+
+<p>$$
+df(x, dx) = f^\prime(x)\ dx.
+$$</p>
+
+<p>When \(dx\) is substituted for \(\Delta{x}\) and \(dy\) for \(f^\prime(x)\ dx\), the Increment Theorem takes the short form</p>
+
+<p>$$
+\Delta{y} = dy + \varepsilon\ dx.
+$$</p>
+
+<p>The Increment Theorem can be explained graphically using an infinitesimal microscope. Under an infinitesimal microscope, a line of length \(\Delta{x}\) is magnified to a line of unit length, but a line of length \(\varepsilon\ \Delta{x}\) is only magnified to an infinitesimal length \(\varepsilon\). Thus the Increment Theorem shows that when \(f^\prime(x)\) exists:</p>
+
+<p>(1)    The differential \(dy\) and the increment \(\Delta{y} = dy + \varepsilon\ dx\) are so close to each other that they cannot be distinguished under an infinitesimal microscope.</p>
+
+<p>(2)    The curve \(y = f(x)\) and the tangent line at \((x, y)\) are so close to each other that they cannot be distinguished under an infinitesimal microscope; both look like a straight line of slope \(f^\prime(x)\).</p>
+
+<p>Figure 2.2.3 is not really accurate. The curvature had to be exaggerated in order to distinguish the curve and tangent line under the microscope. To give an accurate picture, we need a more complicated figure like Figure 2.2.4, which has a second infinitesimal microscope trained on the point \((a + \Delta{x}, b + \Delta{y})\) in the field of view of the original microscope. This second microscope magnifies \(\varepsilon\ dx\) to a unit length and magnifies \(\Delta{x}\) to an infinite length.</p>
+
+<p><img src="/calculus/img/keisler/f2.2.4.gif" alt="figure 2.2.4" /></p>
+
+<p><strong>Figure 2.2.4</strong></p>
+
+<h3 id="example-3">EXAMPLE 3</h3>
+
+<p>Whenever a derivative \(f^\prime(x)\) is known, we can find the differential \(dy\) at once by simply multiplying the derivative by \(dx\), using the formula \(dy = f^\prime(x)\ dx\). The examples in the last section give the following differentials.</p>
+
+<p>(a) \(y = x^3,\ dy = 3x^2\ dx\).</p>
+
+<p>(b) \(y = \sqrt{x},\ dy = \frac{dx}{2\sqrt{x}}\) where \(x &gt; 0\).</p>
+
+<p>(c) \(y = 1/x,\ dy = -dx/x^2\) when \(x \ne 0\).</p>
+
+<p>(d) \(y = |x|,\ dy = \begin{cases} dx &amp;\text{when } x &gt; 0, \cr  -dx &amp;\text{when } x &lt; 0, \cr undefined &amp;\text{when } x = 0. \end{cases}\)</p>
+
+<p>(e) \(y = bt - 16t^2,\ dy = (b - 32t)\ dt\).</p>
+
+<p>The differential notation may also be used when we are given a system of formulas in which two or more dependent variables depend on an independent variable. For example if \(y\) and \(z\) are functions of \(x\),</p>
+
+<p>$$
+y = f(x),\ z = g(x),
+$$</p>
+
+<p>then \(\Delta{y}, \Delta{z}, dy, dz\) are determined by</p>
+
+<p>$$
+\Delta{y} = f(x + \Delta{x}) - f(x),
+$$</p>
+
+<p>$$
+\Delta{z} = g(x + \Delta{x}) - g(x),
+$$</p>
+
+<p>$$
+dy = f^\prime(x)\ dx,\ \ \ \ dz = g^\prime(x)\ dx.
+$$</p>
+
+<h3 id="example-4">EXAMPLE 4</h3>
+
+<p>Given \(y = \frac{1}{2}x, z = x^3\), with \(x\) as the independent variable, then</p>
+
+<p>$$
+\Delta{y} = \frac{1}{2}(x + \Delta{x}) - \frac{1}{2}x = \frac{1}{2}\ \Delta{x},
+$$</p>
+
+<p>$$
+\Delta{z} = 3x^2\ \Delta{x} + 3x(\Delta{x})^2 + (\Delta{x})^3,
+$$</p>
+
+<p>$$
+dy = \frac{1}{2}\ dx,\ dz = 3x^2\ dx.
+$$</p>
+
+<p>The meaning of the symbols for increment and differential in this example will be different if we take \(y\) as the independent variable. Then \(x\) and \(z\) are functions of \(y\).</p>
+
+<p>$$
+x = 2y,\ z = 8y^3.
+$$</p>
+
+<p>Now \(\Delta{y} = dy\) is just an independent variable, while</p>
+
+<p>$$
+\Delta{x} = 2(y + \Delta{y}) - 2y = 2\ \Delta{y},
+$$</p>
+
+<p>$$
+\Delta{z} = 8(y + \Delta{y})^3 - 8y^3
+$$</p>
+
+<p>$$
+= 8[3y^2\ \Delta{y} + 3y(\Delta{y})^2 + (\Delta{y})^3]
+$$</p>
+
+<p>$$
+= 24y^2\ \Delta{y} + 24y(\Delta{y})^2 + 8(\Delta{y})^3.
+$$</p>
+
+<p>Moreover,</p>
+
+<p>$$
+dx = 2\ dy,\ dz = 24y^2\ dy.
+$$</p>
+
+<p>We may also apply the differential notation to terms. If \(\tau(x)\) is a term with the variable \(x\), then \(\tau(x)\) determines a function \(f\),</p>
+
+<p>$$
+\tau(x) = f(x).
+$$</p>
+
+<p>and the differential \(d(\tau(x))\) has the meaning</p>
+
+<p>$$
+d(\tau(x))=f^\prime(x)\ dx.
+$$</p>
+
+<h3 id="example-5">EXAMPLE 5</h3>
+
+<p>(a) \(d(x^3) = 3x^2\ dx\).</p>
+
+<p>(b) \(d(\sqrt{x}) = \frac{dx}{2\sqrt{x}}, x &gt; 0\).</p>
+
+<p>(c) \(d(1/x) = -\frac{dx}{x^2}, x \ne 0\).</p>
+
+<p>(d) \(d(|x|) = \begin{cases} dx &amp;\text{when } x &gt; 0, \cr  -dx &amp;\text{when } x &lt; 0, \cr undefined &amp;\text{when } x = 0. \end{cases}\)</p>
+
+<p>(e) Let \(u = bt\) and \(w = -16t^2\). Then</p>
+
+<p>$$
+u + w = bt - 16t^2,
+$$</p>
+
+<p>$$
+d(u + w) = (b-32t)\ dt.
+$$</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/01/" data-toggle="tooltip" data-placement="top" title="2.1 Derivatives">&larr; Previous</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/03/" data-toggle="tooltip" data-placement="top" title="2.3 Derivatives of Rational Functions">Next &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "calculus-ginuerzh-xyz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/main.js"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

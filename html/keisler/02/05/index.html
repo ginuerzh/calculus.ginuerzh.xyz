@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>2.5 Transcendental Functions</title>
+  <meta property="og:title" content="2.5 Transcendental Functions" />
+  <meta name="twitter:title" content="2.5 Transcendental Functions" />
+  <meta name="description" content="2.5 Transcendental Functions The transcendental functions include the trigonometric functions \(\sin x,\ \cos x,\ \tan x\), the exponential function \(e^x\), and the natural logarithm function \(\ln x\). These functions are developed in detail in Chapters 7 and 8. This section contains a brief discussion.
+1 Trigonometric Functions The Greek letters \(\theta\) (theta) and \(\phi\) (phi) are often used for angles. In the calculus it is convenient to measure angles in radians instead of degrees.">
+  <meta property="og:description" content="2.5 Transcendental Functions The transcendental functions include the trigonometric functions \(\sin x,\ \cos x,\ \tan x\), the exponential function \(e^x\), and the natural logarithm function \(\ln x\). These functions are developed in detail in Chapters 7 and 8. This section contains a brief discussion.
+1 Trigonometric Functions The Greek letters \(\theta\) (theta) and \(\phi\) (phi) are often used for angles. In the calculus it is convenient to measure angles in radians instead of degrees.">
+  <meta name="twitter:description" content="2.5 Transcendental Functions The transcendental functions include the trigonometric functions \(\sin x,\ \cos x,\ \tan x\), the exponential function \(e^x\), and the natural logarithm function \(\ln …">
+  <meta name="author" content=""/>
+  <meta property="og:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://docs.ginuerzh.xyz/calculus/keisler/02/05/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Calculus" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://docs.ginuerzh.xyz/calculus/keisler/02/05/" />
+  <link rel="alternate" href="https://docs.ginuerzh.xyz/calculus/index.xml" type="application/rss+xml" title="Calculus">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/highlight.min.css" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-98791308-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Contents</a>
+              <div class="navlinks-children">
+                
+                  <a href="/calculus/keisler/">Keisler</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about" href="/calculus/about/">about</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Calculus" href="https://docs.ginuerzh.xyz/calculus/">
+            <img class="avatar-img" src="https://docs.ginuerzh.xyz/calculus/logo.jpg" alt="Calculus" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="keisler-heading">
+              <h1>2.5 Transcendental Functions</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="2-5-transcendental-functions">2.5 Transcendental Functions</h1>
+
+<p>The transcendental functions include the trigonometric functions \(\sin x,\ \cos x,\ \tan x\), the exponential function \(e^x\), and the natural logarithm function \(\ln x\). These functions are developed in detail in Chapters 7 and 8. This section contains a brief discussion.</p>
+
+<h2 id="1-trigonometric-functions">1 Trigonometric Functions</h2>
+
+<p>The Greek letters \(\theta\) (theta) and \(\phi\) (phi) are often used for angles. In the calculus it is convenient to measure angles in <em>radians</em> instead of degrees. An angle \(\theta\) in radians is defined as the length of the arc of the angle on a circle of radius one (Figure 2.5.1). Since a circle of radius one has circumference 2π,</p>
+
+<p>360 degrees = 2π radians.</p>
+
+<p><img src="/calculus/img/keisler/f2.5.1.gif" alt="figure 2.5.1" /></p>
+
+<p><strong>Figure 2.5.1</strong></p>
+
+<p>Thus a right angle is</p>
+
+<p>90 degrees = π/2 radians.</p>
+
+<p>To define the sine and cosine functions, we consider a point \(P(x, y)\) on the unit circle \(x^2 + y^2 = 1\). Let \(\theta\) be the angle measured counterclockwise in radians from the point \((1, 0)\) to the point \(P(x, y)\) as shown in Figure 2.5.2. Both coordinates \(x\) and \(y\) depend on \(\theta\). The value of \(x\) is called the <em>cosine</em> of \(\theta\), and the value of \(y\) is the <em>sine</em> of \(\theta\). In symbols,</p>
+
+<p>$$
+x = \cos \theta, \ \ y = \sin \theta.
+$$</p>
+
+<p><img src="/calculus/img/keisler/f2.5.2.gif" alt="figure 2.5.2" /></p>
+
+<p><strong>Figure 2.5.2</strong></p>
+
+<p>The <em>tangent</em> of \(\theta\) is defined by</p>
+
+<p>$$
+\tan \theta = \sin \theta / \cos \theta.
+$$</p>
+
+<p>Negative angles and angles greater than 2π radians are also allowed.</p>
+
+<p>The trigonometric functions can also be defined using the sides of a right triangle, but this method only works for \(\theta\) between 0 and π/2. Let \(\theta\) be one of the acute angles of a right triangle as shown in Figure 2.5.3.</p>
+
+<p><img src="/calculus/img/keisler/f2.5.3.gif" alt="figure 2.5.3" /></p>
+
+<p><strong>Figure 2.5.3</strong></p>
+
+<p>Then</p>
+
+<p>$$
+\sin \theta = \frac{opposite \ site}{hypotenuse} = \frac{a}{c},
+$$</p>
+
+<p>$$
+\cos \theta = \frac{adjacent \ site}{hypotenuse} = \frac{b}{c},
+$$</p>
+
+<p>$$
+\tan \theta = \frac{opposite \ site}{adjacent \ site} = \frac{a}{b}.
+$$</p>
+
+<p>The two definitions, with circles and right triangles, can be seen to be equivalent using similar triangles.</p>
+
+<p>Table 2.5.1 gives the values of \(\sin \theta\) and \(\cos \theta\) for some important values of \(\theta\).</p>
+
+<p><strong>Table 2.5.1</strong></p>
+
+<p><img src="/calculus/img/keisler/t2.5.1.jpg" alt="Table 2.5.1" /></p>
+
+<p>A useful identity which follows from the unit circle equation \(x^2 + y^2 = 1\) is</p>
+
+<p>$$
+\sin^2 \theta + \cos^2 \theta = 1.
+$$</p>
+
+<p>Here \(\sin^2 \theta\) means \((\sin \theta)^2\).</p>
+
+<p>Figure 2.5.4 shows the graphs of \(\sin \theta\) and \(\cos \theta\), which look like waves that oscillate between 1 and -1 and repeat every 2π radians.</p>
+
+<p>The derivatives of the sine and cosine functions are:</p>
+
+<p>$$
+\frac{d(\sin \theta)}{d\theta} = \cos \theta.
+$$</p>
+
+<p>$$
+\frac{d(\cos \theta)}{d\theta} = -\sin \theta.
+$$</p>
+
+<p><img src="/calculus/img/keisler/f2.5.4.gif" alt="figure 2.5.4" /></p>
+
+<p><strong>Figure 2.5.4</strong></p>
+
+<p>In both formulas \(\theta\) is measured in radians. We can see intuitively why these are the derivatives in Figure 2.5.5.</p>
+
+<p>In the triangle under the infinitesimal microscope,</p>
+
+<p>$$
+\frac{\Delta{(\sin \theta)}}{\Delta{\theta}} \approx \frac{adjacent \ site}{hypotenuse} = \cos \theta;
+$$</p>
+
+<p>$$
+\frac{\Delta{(\cos \theta)}}{\Delta{\theta}} \approx \frac{-opposite \ site}{hypotenuse} = -\sin \theta.
+$$</p>
+
+<p><img src="/calculus/img/keisler/f2.5.5.gif" alt="figure 2.5.5" /></p>
+
+<p><strong>Figure 2.5.5</strong></p>
+
+<p>Notice that \(\cos \theta\) decreases, and \(\Delta{(\cos \theta)}\) is negative in the figure, so the derivative of \(\cos \theta\) is \(-\sin \theta\) instead of just \(\sin \theta\).</p>
+
+<p>Using the rules of differentiation we can find other derivatives.</p>
+
+<h3 id="example-1">EXAMPLE 1</h3>
+
+<p>Differentiate \(y = \sin^2 \theta\). Let \(u = \sin \theta, y = u^2\). Then</p>
+
+<p>$$
+\frac{dy}{d\theta} = 2u\frac{du}{d\theta} = 2\sin \theta \cos \theta.
+$$</p>
+
+<h3 id="example-2">EXAMPLE 2</h3>
+
+<p>Differentiate \(y = \sin \theta (1 - \cos \theta)\). Let \(u = \sin \theta, v = 1 - \cos \theta\). Then \(y = u \cdot v\), and</p>
+
+<p>$$
+\frac{dy}{d\theta} = u\frac{dv}{d\theta} + v\frac{du}{d\theta}
+$$</p>
+
+<p>$$
+= \sin \theta(-(-\sin \theta)) + (1 - \cos \theta)\cos \theta
+$$</p>
+
+<p>$$
+= \sin^2 \theta + \cos \theta - \cos^2 \theta.
+$$</p>
+
+<p>The other trigonometric functions (the secant, cosecant, and cotangent functions) and the inverse trigonometric functions are discussed in Chapter 7.</p>
+
+<h2 id="2-exponential-functions">2 Exponential Functions</h2>
+
+<p>Given a positive real number \(b\) and a rational number \(m/n\), the rational power \(b^{m / n}\) is defined as</p>
+
+<p>$$
+b^{m / n} = \sqrt[n]{b^m},
+$$</p>
+
+<p>the positive \(n\)th root of \(b^m\). The negative power \(b^{-m / n}\) is</p>
+
+<p>$$
+b^{-m / n} = \frac{1}{b^{m / n}}.
+$$</p>
+
+<p>As an example consider \(b = 10\). Several values of \(10^{m / n}\) are shown in Table 2.5.2.</p>
+
+<p><strong>Table 2.5.2</strong></p>
+
+<p><img src="/calculus/img/keisler/t2.5.2.jpg" alt="Table 2.5.2" /></p>
+
+<p>If we plot all the rational powers \(10^{m / n}\), we get a dotted line, with one value for each rational number \(m/n\), as in Figure 2.5.6.</p>
+
+<p><img src="/calculus/img/keisler/f2.5.6.gif" alt="figure 2.5.6" /></p>
+
+<p><strong>Figure 2.5.6</strong></p>
+
+<p>By connecting the dots with a smooth curve, we obtain a function \(y = 10^x\), where \(x\) varies over all real numbers instead of just the rationals. \(10^x\) is called the <em>exponential function with base</em> 10. It is positive for all \(x\) and follows the rules</p>
+
+<p>$$
+10^{a+b} = 10^a \cdot 10^b, \ \ 10^{a \cdot b} = (10^a)^b.
+$$</p>
+
+<p>The derivative of \(10^x\) is a constant times \(10^x\), approximately</p>
+
+<p>$$
+\frac{d(10^x)}{dx} \thicksim (2.303)10^x.
+$$</p>
+
+<p>To see this let \(\Delta{x}\) be a nonzero infinitesimal. Then</p>
+
+<p>$$
+\frac{d(10^x)}{dx} = st\begin{bmatrix} \frac{10^{x + \Delta{x}} - 10^x}{\Delta{x}} \end{bmatrix}
+$$</p>
+
+<p>$$
+= st\begin{bmatrix} \frac{(10^{\Delta{x}} - 1)10^x}{\Delta{x}} \end{bmatrix}
+$$</p>
+
+<p>$$
+= st\begin{bmatrix} \frac{10^{\Delta{x}} - 1}{\Delta{x}} \end{bmatrix}10^x.
+$$</p>
+
+<p>The number \(st[(10^{\Delta{x}} - 1) / \Delta{x}]\) is a constant which does not depend on \(x\) and can be shown to be approximately 2.303.</p>
+
+<p>If we start with a given positive real number \(b\) instead of 10, we obtain the <em>exponential function with base b</em>, \(y = b^x\). The derivative of \(b^x\) is equal to the constant \(st[(b^{\Delta{x}} - 1) / \Delta{x}]\) times \(b^x\). This constant depends on \(b\). The derivative is computed as follows:</p>
+
+<p>$$
+\frac{d(b^x)}{dx} = st\begin{bmatrix} \frac{b^{x + \Delta{x}} - b^x}{\Delta{x}} \end{bmatrix}
+$$</p>
+
+<p>$$
+= st\begin{bmatrix} \frac{(b^{\Delta{x}} - 1)b^x}{\Delta{x}} \end{bmatrix} = st\begin{bmatrix} \frac{b^{\Delta{x}} - 1}{\Delta{x}} \end{bmatrix}b^x.
+$$</p>
+
+<p>The most useful base for the calculus is the number \(e\). \(e\) is defined as the real number such that the derivative of \(e^x\) is \(e^x\) itself,</p>
+
+<p>$$
+\frac{d(e^x)}{dx} = e^x.
+$$</p>
+
+<p>In other words, \(e\) is the real number such that the constant</p>
+
+<p>$$
+st\begin{bmatrix} \frac{e^{\Delta{x}} - 1}{\Delta{x}} \end{bmatrix} = 1
+$$</p>
+
+<p>(where \(\Delta{x}\) is a nonzero infinitesimal). It will be shown in Section 8.3 that there is such a number \(e\) and that \(e\) has the approximate value</p>
+
+<p>$$
+e \thicksim 2.71828.
+$$</p>
+
+<p>The function \(y = e^x\) is called the <em>exponential function</em>. \(e^x\) is always positive and follows the rules</p>
+
+<p>$$
+e^{a + b} = e^a \cdot e^b, \ \ e^{a \cdot b} = (e^a)^b, \ \ e^0 = 1.
+$$</p>
+
+<p>Figure 2.5.7 shows the graph of \(y = e^x\).</p>
+
+<p><img src="/calculus/img/keisler/f2.5.7.gif" alt="figure 2.5.7" /></p>
+
+<p><strong>Figure 2.5.7</strong></p>
+
+<h3 id="example-3">EXAMPLE 3</h3>
+
+<p>Find the derivative of \(y = x^2e^x\). By the Product Rule,</p>
+
+<p>$$
+\frac{dy}{dx} = x^2\frac{d(e^x)}{dx} + e^x\frac{d(x^2)}{dx}
+$$</p>
+
+<p>$$
+= x^2e^x + 2xe^x.
+$$</p>
+
+<h2 id="3-the-natural-logarithm">3 The Natural Logarithm</h2>
+
+<p>The inverse of the exponential function \(x = e^y\) is the <em>natural logarithm function</em>, written</p>
+
+<p>$$
+y = \ln x.
+$$</p>
+
+<p>Verbally, \(\ln x\) is the number \(y\) such that \(e^y = x\). Since \(y = \ln x\) is the inverse function of \(x = e^y\), we have</p>
+
+<p>$$
+e^{\ln a} = a, \ \ \ln(e^a) = a.
+$$</p>
+
+<p>The simplest values of \(y = \ln x\) are</p>
+
+<p>$$
+\ln (1/e) = -1, \ \ \ln(1) = 0, \ \ \ln e = 1.
+$$</p>
+
+<p>Figure 2.5.8 shows the graph of \(y = \ln x\). It is defined only for \(x &gt; 0\).</p>
+
+<p><img src="/calculus/img/keisler/f2.5.8.gif" alt="figure 2.5.8" /></p>
+
+<p><strong>Figure 2.5.8</strong></p>
+
+<p>The most important rules for logarithms are</p>
+
+<p>$$
+\ln (ab) = \ln a + \ln b,
+$$</p>
+
+<p>$$
+\ln (a^b) = b \cdot \ln a.
+$$</p>
+
+<p>The natural logarithm function is important in calculus because its derivative is simply \(1/x\),</p>
+
+<p>$$
+\frac{d(\ln x)}{dx} = \frac{1}{x}, \ (x &gt; 0).
+$$</p>
+
+<p>This can be derived from the Inverse Function Rule.</p>
+
+<p>If</p>
+
+<p>$$
+y = \ln x,
+$$</p>
+
+<p>then</p>
+
+<p>$$
+x = e^y,
+$$</p>
+
+<p>$$
+\frac{dx}{dy} = e^y,
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{dx/dy} = \frac{1}{e^y} = \frac{1}{x}.
+$$</p>
+
+<p>The natural logarithm is also called the logarithm to the base \(e\) and is sometimes written \(\log_ex\). Logarithms to other bases are discussed in Chapter 8.</p>
+
+<h3 id="example-4">EXAMPLE 4</h3>
+
+<p>Differentiate \(y = \frac{1}{\ln x}\).</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{-1}{(\ln x)^2}\frac{d(\ln x)}{dx} = -\frac{1}{x(\ln x)^2}.
+$$</p>
+
+<h2 id="4-summary">4 Summary</h2>
+
+<p>Here is a list of the new derivatives given in this section.</p>
+
+<p>$$
+\frac{d(\sin x)}{dx} = \cos x.
+$$</p>
+
+<p>$$
+\frac{d(\cos x)}{dx} = -\sin x.
+$$</p>
+
+<p>$$
+\frac{d(e^x)}{dx} = e^x.
+$$</p>
+
+<p>$$
+\frac{d(\ln x)}{dx} = \frac{1}{x}.
+$$</p>
+
+<p>Tables of values for \(\sin x,\ \cos x,\ e^x\), and \(\ln x\) can be found at the end of the book.</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/04/" data-toggle="tooltip" data-placement="top" title="2.4 Inverse Functions">&larr; Previous</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/06/" data-toggle="tooltip" data-placement="top" title="2.6 Chain Rule">Next &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "calculus-ginuerzh-xyz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/main.js"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>2.8 Implicit Functions</title>
+  <meta property="og:title" content="2.8 Implicit Functions" />
+  <meta name="twitter:title" content="2.8 Implicit Functions" />
+  <meta name="description" content="2.8 Implicit Functions We now turn to the topic of implicit differentiation. We say that \(y\) is an implicit function of \(x\) if we are given an equation
+$$ \sigma(x, y) = \tau(x, y) $$
+which determines \(y\) as a function of \(x\). An example is \(x &#43; xy = 2y\). Implicit differentiation is a way of finding the derivative of \(y\) without actually solving for \(y\) as a function of \(x\).">
+  <meta property="og:description" content="2.8 Implicit Functions We now turn to the topic of implicit differentiation. We say that \(y\) is an implicit function of \(x\) if we are given an equation
+$$ \sigma(x, y) = \tau(x, y) $$
+which determines \(y\) as a function of \(x\). An example is \(x &#43; xy = 2y\). Implicit differentiation is a way of finding the derivative of \(y\) without actually solving for \(y\) as a function of \(x\).">
+  <meta name="twitter:description" content="2.8 Implicit Functions We now turn to the topic of implicit differentiation. We say that \(y\) is an implicit function of \(x\) if we are given an equation
+$$ \sigma(x, y) = \tau(x, y) $$
+which …">
+  <meta name="author" content=""/>
+  <meta property="og:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:image" content="https://docs.ginuerzh.xyz/calculus/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://docs.ginuerzh.xyz/calculus/keisler/02/08/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Calculus" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://docs.ginuerzh.xyz/calculus/keisler/02/08/" />
+  <link rel="alternate" href="https://docs.ginuerzh.xyz/calculus/index.xml" type="application/rss+xml" title="Calculus">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://docs.ginuerzh.xyz/calculus/css/highlight.min.css" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-98791308-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Contents</a>
+              <div class="navlinks-children">
+                
+                  <a href="/calculus/keisler/">Keisler</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about" href="/calculus/about/">about</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Calculus" href="https://docs.ginuerzh.xyz/calculus/">
+            <img class="avatar-img" src="https://docs.ginuerzh.xyz/calculus/logo.jpg" alt="Calculus" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="keisler-heading">
+              <h1>2.8 Implicit Functions</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="2-8-implicit-functions">2.8 Implicit Functions</h1>
+
+<p>We now turn to the topic of implicit differentiation. We say that \(y\) is an <em>implicit function</em> of \(x\) if we are given an equation</p>
+
+<p>$$
+\sigma(x, y) = \tau(x, y)
+$$</p>
+
+<p>which determines \(y\) as a function of \(x\). An example is \(x + xy = 2y\). Implicit differentiation is a way of finding the derivative of \(y\) without actually solving for \(y\) as a function of \(x\). Assume that \(dy/dx\) exists. The method has two steps:</p>
+
+<p><em>Step 1</em></p>
+
+<p>Differentiate both sides of the equation \(\sigma(x, y) = \tau(x, y)\) to get a new equation</p>
+
+<p><strong>(1)</strong></p>
+
+<p>$$
+\frac{d(\sigma(x, y))}{dx} = \frac{d(\tau(x, y))}{dx}.
+$$</p>
+
+<p>The Chain Rule is often used in this step.</p>
+
+<p><em>Step 2</em></p>
+
+<p>Solve the new Equation 1 for \(dy/dx\). The answer will usually involve both \(x\) and \(y\).</p>
+
+<p>In each of the examples below, we assume that \(dy/dx\) exists and use implicit differentiation to find the value of \(dy/dx\).</p>
+
+<h3 id="example-1">EXAMPLE 1</h3>
+
+<p>Given the equation \(x + xy = 2y\), find \(dy/dx\).</p>
+
+<p><em>Step 1</em></p>
+
+<p>$$
+\frac{d(x + xy)}{dx} = \frac{d(2y)}{dx}.
+$$</p>
+
+<p>We find each side by the Sum and Product Rules,</p>
+
+<p>$$
+\frac{d(x + xy)}{dx} = \frac{dx + d(xy)}{dx}
+$$</p>
+
+<p>$$
+= \frac{dx + x\ dy + y\ dx}{dx} = 1 + x\frac{dy}{dx} + y.
+$$</p>
+
+<p>$$
+\frac{d(2y)}{dx} = 2\frac{dy}{dx}.
+$$</p>
+
+<p>Thus our new equation is</p>
+
+<p>$$
+1 + x\frac{dy}{dx} + y = 2\frac{dy}{dx}.
+$$</p>
+
+<p><em>Step2</em></p>
+
+<p>Solve for \(dy/dx\).</p>
+
+<p>$$
+2\frac{dy}{dx} - x\frac{dy}{dx} = 1 + y.
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1 + y}{2 - x}.
+$$</p>
+
+<p>We can check our answer by solving the original equation for \(y\) and using ordinary differentiation:</p>
+
+<p>$$
+x + xy = 2y.
+$$</p>
+
+<p>$$
+2y - xy = x.
+$$</p>
+
+<p>$$
+y = \frac{x}{2 - x}.
+$$</p>
+
+<p>By the Quotient Rule,</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{(2 - x) \cdot 1 - x(-1)}{(2 - x)^2} = \frac{2}{(2 - x)^2}.
+$$</p>
+
+<p>A third way to find \(dy/dx\) is to solve the original equation for \(x\), find \(dx/dy\), and then use the Inverse Function Rule.</p>
+
+<p>$$
+x + xy = 2y.
+$$</p>
+
+<p>$$
+x = \frac{2y}{1 + y}.
+$$</p>
+
+<p>$$
+\frac{dx}{dy} = \frac{(1 + y) \cdot 2 - 2y \cdot 1}{(1 + y)^2} = \frac{2}{(1 + y)^2}.
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{2}(1 + y)^2.
+$$</p>
+
+<p>To see that our three answers</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1 + y}{2 - x},
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{2}{(2 - x)^2},
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{2}(1 + y)^2
+$$</p>
+
+<p>are all the same we substitute \(\frac{x}{2 - x}\) for \(y\):</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1 + y}{2 - x} = \frac{1 + \frac{x}{2 - x}}{2 - x} = \frac{2}{(2 - x)^2}.
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{1}{2}(1 + y)^2
+$$</p>
+
+<p>$$
+= \frac{1}{2}\Bigl(1 + \frac{x}{2 - x}\Bigr)^2 = \frac{2}{(2 - x)^2}.
+$$</p>
+
+<p>In Example 1, we found \(dy/dx\) by three different methods.</p>
+
+<p>(a) Implicit differentiation. We get \(dy/dx\) in terms of both \(x\) and \(y\).</p>
+
+<p>(b) Solve for \(y\) as a function of \(x\) and differentiate directly. This gives \(dy/dx\) in terms of \(x\) only.</p>
+
+<p>(c) Solve for \(x\) as a function of \(y\), find \(dx/dy\) directly, and use the Inverse Function Rule. This method gives \(dy/dx\) in terms of \(y\) only.</p>
+
+<h3 id="example-2">EXAMPLE 2</h3>
+
+<p>Given \(y + \sqrt{y} = x^2\), find \(dy/dx\).</p>
+
+<p>$$
+\frac{d(y + \sqrt{y})}{dx} = \frac{d(x^2)}{dx}.
+$$</p>
+
+<p>$$
+\frac{dy}{dx} + \frac{1}{2}y^{-1 / 2}\frac{dy}{dx} = 2x.
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{2x}{1 + \frac{1}{2}y^{-1 / 2}}.
+$$</p>
+
+<p>This answer can be used to find the slope at any point on the curve, For example, at the point \((\sqrt{2}, 1)\) the slope is</p>
+
+<p>$$
+\frac{2\sqrt{2}}{1 + \frac{1}{2} \cdot 1^{-1 / 2}} = \frac{2\sqrt{2}}{3 / 2} = \frac{4\sqrt{2}}{3}
+$$</p>
+
+<p>while at the point \((-\sqrt{2}, 1)\) the slope is</p>
+
+<p>$$
+\frac{2(-\sqrt{2})}{1 + \frac{1}{2} \cdot 1^{-1 / 2}} = \frac{-4\sqrt{2}}{3}.
+$$</p>
+
+<p>To get \(dy/dx\) in terms of \(x\), we solve the original equation for \(y\) using the quadratic formula:</p>
+
+<p>$$
+y + \sqrt{y} - x^2 = 0,
+$$</p>
+
+<p>$$
+\sqrt{y} = \frac{-1 \pm \sqrt{1 + 4x^2}}{2}.
+$$</p>
+
+<p>Since \(\sqrt{y} \ge 0\), only one solution may occur,</p>
+
+<p>$$
+\sqrt{y} = \frac{-1 + \sqrt{1 + 4x^2}}{2}.
+$$</p>
+
+<p>Then</p>
+
+<p>$$
+y = \Bigl(\frac{-1 + \sqrt{1 + 4x^2}}{2}\Bigr)^2
+$$</p>
+
+<p>The graph of this function is shown in Figure 2.8.1. By substitution we get</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{2x}{1 + \frac{1}{2}y^{-1 / 2}}
+$$</p>
+
+<p>$$
+= \frac{2x}{1 + (-1 + \sqrt{1 + 4x^2})^{-1}}.
+$$</p>
+
+<p><img src="/calculus/img/keisler/f2.8.1.gif" alt="figure 2.8.1" /></p>
+
+<p><strong>Figure 2.8.1</strong></p>
+
+<p>Often one side of an implicit function equation is constant and has derivative zero.</p>
+
+<h3 id="example-3">EXAMPLE 3</h3>
+
+<p>Given \(x^2 - 2y^2 = 4\), \(y \le 0\), find \(dy/dx\).</p>
+
+<p>$$
+\frac{d(x^2 - 2y^2)}{dx} = \frac{d(4)}{dx}.
+$$</p>
+
+<p>$$
+\frac{d(x^2 - 2y^2)}{dx} = 2x - 4y\frac{dy}{dx}.
+$$</p>
+
+<p>$$
+\frac{d(4)}{dx} = 0.
+$$</p>
+
+<p>$$
+2x - 4y\frac{dy}{dx} = 0.
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{-2x}{-4y} = \frac{x}{2y}.
+$$</p>
+
+<p>Solving the original equation for \(y\), we get</p>
+
+<p>$$
+-2y^2 = 4 - x^2, \ \ y \le 0;
+$$</p>
+
+<p>$$
+y^2 = \frac{x^2 - 4}{2}, \ \ y \le 0;
+$$</p>
+
+<p>$$
+y = -\sqrt{\frac{x^2 - 4}{2}}.
+$$</p>
+
+<p>Thus \(dy/dx\) in terms of \(x\) is</p>
+
+<p>$$
+\frac{dy}{dx} = \frac{x}{2y}
+$$</p>
+
+<p>$$
+= \frac{x}{-2\sqrt{\frac{x^2 - 4}{2}}} = - \frac{x}{\sqrt{2(x^2 - 4)}}.
+$$</p>
+
+<p>The graph of this function is shown in Figure 2.8.2.</p>
+
+<p><img src="/calculus/img/keisler/f2.8.2.gif" alt="figure 2.8.2" /></p>
+
+<p><strong>Figure 2.8.2</strong></p>
+
+<p>Implicit differentiation can even be applied to an equation that does not by itself determine \(y\) as a function \(x\). Sometimes extra inequalities must be assumed in order to make \(y\) a function of \(x\).</p>
+
+<h3 id="example-4">EXAMPLE 4</h3>
+
+<p>Given</p>
+
+<p><strong>(2)</strong></p>
+
+<p>$$
+x^2 + y^2 = 1,
+$$</p>
+
+<p>find \(dy/dx\). This equation does not determine \(y\) as a function of \(x\); its graph is the unit circle. Nevertheless we differentiate both sides with respect to \(x\) and solve for \(dy/dx\).</p>
+
+<p>$$
+2x + 2y\frac{dy}{dx} = 0, \ \ \frac{dy}{dx} = -\frac{x}{y}.
+$$</p>
+
+<p>We can conclude that for any system of formulas S which contains the Equation 2 and also determines \(y\) as a function of \(x\), it is true that</p>
+
+<p><strong>(3)</strong></p>
+
+<p>$$
+\frac{dy}{dx} = -\frac{x}{y}.
+$$</p>
+
+<p>We can use Equation 3 to find the slope of the line tangent to the unit circle at any point on the circle. The following examples are illustrated in Figure 2.8.3.</p>
+
+<p><img src="/calculus/img/keisler/f2.8.3.gif" alt="figure 2.8.3" /></p>
+
+<p><strong>Figure 2.8.3</strong></p>
+
+<p>$$
+\frac{dy}{dx} = 0 \ at \ (0, -1),
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = -\frac{1}{\sqrt{3}} \ at \ (\frac{1}{2}, \frac{\sqrt{3}}{2}),
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = \sqrt{8} \ at \ (\frac{\sqrt{8}}{3}, -\frac{1}{3}),
+$$</p>
+
+<p>$$
+\frac{dy}{dx}\ {is\ undefined\ at}\ (-1, 0).
+$$</p>
+
+<p>The system of formulas</p>
+
+<p>$$
+x^2 + y^2 = 1,\ \ y \ge 0
+$$</p>
+
+<p>gives us</p>
+
+<p>$$
+y = \sqrt{1 - x^2}, \ \ \frac{dy}{dx} = -\frac{x}{y} = -\frac{x}{\sqrt{1 - x^2}}.
+$$</p>
+
+<p>On the other hand the system</p>
+
+<p>$$
+x^2 + y^2 = 1,\ \ y \le 0
+$$</p>
+
+<p>gives us</p>
+
+<p>$$
+y = -\sqrt{1 - x^2}, \ \ \frac{dy}{dx} = -\frac{x}{y} = \frac{x}{\sqrt{1 - x^2}}.
+$$</p>
+
+<h3 id="example-5">EXAMPLE 5</h3>
+
+<p>Find the slope of the line tangent to the curve</p>
+
+<p><strong>(4)</strong></p>
+
+<p>$$
+x^5y^3 + xy^6 = y + 1
+$$</p>
+
+<p>at the points \((1,1)\), \((1, -1)\), and \((0, -1)\).</p>
+
+<p>The three points are all on the curve, and the first two points have the same \(x\) coordinate, so Equation 4 does not by itself determine \(y\) as a function of \(x\).</p>
+
+<p>We differentiate with respect to \(x\),</p>
+
+<p>$$
+\frac{d(x^5y^3 + xy^6)}{dx} = \frac{d(y + 1)}{dx}.
+$$</p>
+
+<p>$$
+5x^4y^3 + x^5 \cdot 3y^2\frac{dy}{dx} + y^6 + 6xy^5\frac{dy}{dx} = \frac{dy}{dx},
+$$</p>
+
+<p>and then solve for \(dy/dx\),</p>
+
+<p>$$
+5x^4y^3 + y^6 + (3x^5y^2 + 6xy^5 - 1)\frac{dy}{dx} = 0,
+$$</p>
+
+<p><strong>(5)</strong></p>
+
+<p>$$
+\frac{dy}{dx} = -\frac{5x^4y^3 +y^6}{3x^5y^2 + 6xy^5 - 1}.
+$$</p>
+
+<p>Substituting,</p>
+
+<p>$$
+\frac{dy}{dx} = -\frac{6}{8} \ at \ (1, 1).
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = -1 \ at \ (1, -1).
+$$</p>
+
+<p>$$
+\frac{dy}{dx} = +1 \ at \ (0, -1).
+$$</p>
+
+<p>Equation 5 for \(dy/dx\) is true of any system \(S\) of formulas which contains Equation 4 and determines \(y\) as a function of \(x\).</p>
+
+<p>Here is what generally happens in the method of implicit differentiation. Given an equation</p>
+
+<p><strong>(6)</strong></p>
+
+<p>$$
+\tau(x,y) = \sigma(x,y)
+$$</p>
+
+<p>between two terms which may involve the variables \(x\) and \(y\), we differentiate both sides of the equation and obtain</p>
+
+<p><strong>(7)</strong></p>
+
+<p>$$
+\frac{d(\tau(x,y))}{dx} = \frac{d(\sigma(x,y))}{dx}.
+$$</p>
+
+<p>We then solve Equation 7 to get \(dy/dx\) equal to a term which typically involves both \(x\) and \(y\). We can conclude that for any system of formulas which contains Equation 6 and determines \(y\) as a function of \(x\). Equation 7 is true. Also, Equation 7 can be used to find the slope of the tangent line at any point on the curve \(\tau(x, y) = \sigma(x, y)\).</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/02/07/" data-toggle="tooltip" data-placement="top" title="2.7 Higher Derivatives">&larr; Previous</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://docs.ginuerzh.xyz/calculus/keisler/03/01/" data-toggle="tooltip" data-placement="top" title="3.1 How to Set Up a Problem">Next &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "calculus-ginuerzh-xyz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://docs.ginuerzh.xyz/calculus/">Calculus</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/main.js"></script>
+<script src="https://docs.ginuerzh.xyz/calculus/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+
