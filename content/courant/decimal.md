@@ -1,8 +1,7 @@
 +++
 date = "2018-06-24T20:51:00+08:00"
+title = "Decimal Fractions. Bases Other than Ten"
 +++
-
-# Decimal Fractions. Bases Other than Ten
 
 It is possible that there are two different decimal representations of the same number; for example,
 

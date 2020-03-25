@@ -1,8 +1,7 @@
 +++
 date = "2017-10-10T14:13:50+08:00"
+title = "Introduction"
 +++
-
-# Introduction
 
 While arithmetic deals with sums, differences, products, and quotients, calculus deals with derivatives and integrals. The derivative and integral can be described in everyday language in terms of an automobile trip. An automobile instrument panel has a _speedometer_ marked off in miles per hour with a needle indicating the speed. The instrument panel also has an _odometer_ which tallies up the distance travelled in miles (the mileage).
 

@@ -1,8 +1,7 @@
 +++
 date = "2017-12-05T14:50:00+08:00"
+title = "Problems for section 2.1"
 +++
-
-# Problems for section 2.1
 
 Find the derivative of the given function in Problems 1-21.
 
