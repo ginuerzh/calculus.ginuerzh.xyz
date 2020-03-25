@@ -1,1 +1,4 @@
-/public
+*.swo
+*.swp
+bak
+
