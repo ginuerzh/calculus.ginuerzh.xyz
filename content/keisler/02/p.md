@@ -1,6 +1,5 @@
 +++
 date = "2017-12-05T14:50:00+08:00"
-title = "Problems for Chapter 2"
 +++
 
 # Problems for section 2.1
